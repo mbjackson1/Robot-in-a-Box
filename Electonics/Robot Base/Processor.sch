@@ -1,0 +1,2194 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title "Robot Base"
+Date "2021-04-06"
+Rev "vA"
+Comp ""
+Comment1 "Matthew Jackson"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L USER_Passives:Resistor R2
+U 1 1 604437AE
+P 4250 4300
+F 0 "R2" V 4350 4300 50  0000 C CNN
+F 1 "10k" V 4150 4300 50  0000 C CNN
+F 2 "USER_Resistor_SMD:R_0603_1608Metric" V 4180 4300 50  0001 C CNN
+F 3 "~" H 4250 4300 50  0001 C CNN
+F 4 "0.07" H 4250 4300 50  0001 C CNN "Cost"
+F 5 "10k, 1%, 0.1W, 0603" H 4250 4300 50  0001 C CNN "Description"
+F 6 "Yageo" H 4250 4300 50  0001 C CNN "Manufacturer"
+F 7 "RC0603FR-0710KL" H 4250 4300 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 4250 4300 50  0001 C CNN "Supplier"
+F 9 "311-10.0KHRCT-ND" H 4250 4300 50  0001 C CNN "Supplier Part Number"
+F 10 "C25804" H 4250 4300 50  0001 C CNN "LCSC Part Number"
+	1    4250 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L USER_Power_Symbols:GND #PWR03
+U 1 1 60443EA8
+P 4500 4350
+F 0 "#PWR03" H 4500 4100 50  0001 C CNN
+F 1 "GND" H 4505 4177 50  0000 C CNN
+F 2 "" H 4500 4350 50  0001 C CNN
+F 3 "" H 4500 4350 50  0001 C CNN
+	1    4500 4350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 4350 4500 4300
+Wire Wire Line
+	4500 4300 4400 4300
+Wire Wire Line
+	4100 4300 3800 4300
+$Comp
+L USER_Passives:Resistor R3
+U 1 1 60445808
+P 7200 6300
+F 0 "R3" V 7150 6500 50  0000 C CNN
+F 1 "10k" V 7250 6500 50  0000 C CNN
+F 2 "USER_Resistor_SMD:R_0603_1608Metric" V 7130 6300 50  0001 C CNN
+F 3 "~" H 7200 6300 50  0001 C CNN
+F 4 "0.07" H 7200 6300 50  0001 C CNN "Cost"
+F 5 "10k, 1%, 0.1W, 0603" H 7200 6300 50  0001 C CNN "Description"
+F 6 "Yageo" H 7200 6300 50  0001 C CNN "Manufacturer"
+F 7 "RC0603FR-0710KL" H 7200 6300 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 7200 6300 50  0001 C CNN "Supplier"
+F 9 "311-10.0KHRCT-ND" H 7200 6300 50  0001 C CNN "Supplier Part Number"
+F 10 "C25804" H 7200 6300 50  0001 C CNN "LCSC Part Number"
+	1    7200 6300
+	0    1    -1   0   
+$EndComp
+$Comp
+L USER_Power_Symbols:GND #PWR010
+U 1 1 60445BDB
+P 7050 6650
+F 0 "#PWR010" H 7050 6400 50  0001 C CNN
+F 1 "GND" H 7055 6477 50  0000 C CNN
+F 2 "" H 7050 6650 50  0001 C CNN
+F 3 "" H 7050 6650 50  0001 C CNN
+	1    7050 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Test_Points:TestPoint TP2
+U 1 1 6044785E
+P 6400 6000
+F 0 "TP2" H 6458 6118 50  0001 L CNN
+F 1 "BOOT0" V 6400 6300 50  0000 C CNN
+F 2 "USER_TestPoint:TestPoint_Pad_1.0x1.0mm" H 6600 6000 50  0001 C CNN
+F 3 "~" H 6600 6000 50  0001 C CNN
+	1    6400 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Crystal Y1
+U 1 1 60448AE1
+P 4600 5250
+F 0 "Y1" V 4554 5381 50  0000 L CNN
+F 1 "25MHz" V 4645 5381 50  0000 L CNN
+F 2 "USER_Crystal:Crystal_SMD_Abracon_ABM3-2Pin_5.0x3.2mm" H 4600 5250 50  0001 C CNN
+F 3 "~" H 4600 5250 50  0001 C CNN
+F 4 "0.71" H 4600 5250 50  0001 C CNN "Cost"
+F 5 "25MHz ±20ppm Crystal 18pF 30R" H 4600 5250 50  0001 C CNN "Description"
+F 6 "Abracon LLC" H 4600 5250 50  0001 C CNN "Manufacturer"
+F 7 "ABM3-25.000MHZ-D2Y-T" H 4600 5250 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 4600 5250 50  0001 C CNN "Supplier"
+F 9 "535-10645-1-ND" H 4600 5250 50  0001 C CNN "Supplier Part Number"
+F 10 "C148312" H 4600 5250 50  0001 C CNN "LCSC Part Number"
+	1    4600 5250
+	0    -1   1    0   
+$EndComp
+$Comp
+L USER_Passives:Resistor R1
+U 1 1 6044A4D9
+P 4150 5400
+F 0 "R1" V 4050 5500 50  0000 C CNN
+F 1 "0R" V 4050 5200 50  0000 C CNN
+F 2 "USER_Resistor_SMD:R_0603_1608Metric" V 4080 5400 50  0001 C CNN
+F 3 "~" H 4150 5400 50  0001 C CNN
+F 4 "0.07" H 4150 5400 50  0001 C CNN "Cost"
+F 5 "0R, 0.1W, 0603" H 4150 5400 50  0001 C CNN "Description"
+F 6 "Yageo" H 4150 5400 50  0001 C CNN "Manufacturer"
+F 7 "RC0603JR-070RL" H 4150 5400 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 4150 5400 50  0001 C CNN "Supplier"
+F 9 "311-0.0GRCT-ND" H 4150 5400 50  0001 C CNN "Supplier Part Number"
+F 10 "C21189" H 4150 5400 50  0001 C CNN "LCSC Part Number"
+	1    4150 5400
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4600 5400 4300 5400
+$Comp
+L USER_Passives:Capacitor C14
+U 1 1 6044CEED
+P 5100 5400
+F 0 "C14" V 5050 5300 50  0000 R CNN
+F 1 "33pF" V 5050 5500 50  0000 L CNN
+F 2 "USER_Capacitor_SMD:C_0603_1608Metric" H 5138 5250 50  0001 C CNN
+F 3 "~" H 5100 5400 50  0001 C CNN
+F 4 "0.07" H 5100 5400 50  0001 C CNN "Cost"
+F 5 "33pF, 50V, C0G-NP0, 0603" H 5100 5400 50  0001 C CNN "Description"
+F 6 "Samsung" H 5100 5400 50  0001 C CNN "Manufacturer"
+F 7 "CL10C330JB8NNNC" H 5100 5400 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 5100 5400 50  0001 C CNN "Supplier"
+F 9 "1276-1070-1-ND" H 5100 5400 50  0001 C CNN "Supplier Part Number"
+F 10 "C1663" H 5100 5400 50  0001 C CNN "LCSC Part Number"
+	1    5100 5400
+	0    1    -1   0   
+$EndComp
+$Comp
+L USER_Passives:Capacitor C13
+U 1 1 6044DCD4
+P 5100 5100
+F 0 "C13" V 5050 5200 50  0000 L CNN
+F 1 "33pF" V 5050 5000 50  0000 R CNN
+F 2 "USER_Capacitor_SMD:C_0603_1608Metric" H 5138 4950 50  0001 C CNN
+F 3 "~" H 5100 5100 50  0001 C CNN
+F 4 "0.07" H 5100 5100 50  0001 C CNN "Cost"
+F 5 "33pF, 50V, C0G-NP0, 0603" H 5100 5100 50  0001 C CNN "Description"
+F 6 "Samsung" H 5100 5100 50  0001 C CNN "Manufacturer"
+F 7 "CL10C330JB8NNNC" H 5100 5100 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 5100 5100 50  0001 C CNN "Supplier"
+F 9 "1276-1070-1-ND" H 5100 5100 50  0001 C CNN "Supplier Part Number"
+F 10 "C1663" H 5100 5100 50  0001 C CNN "LCSC Part Number"
+	1    5100 5100
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4600 5100 4950 5100
+Wire Wire Line
+	4600 5400 4950 5400
+Connection ~ 4600 5400
+Wire Wire Line
+	5250 5400 5350 5400
+Wire Wire Line
+	5350 5400 5350 5250
+Wire Wire Line
+	5350 5100 5250 5100
+$Comp
+L USER_Power_Symbols:GND #PWR04
+U 1 1 6045065F
+P 5550 5300
+F 0 "#PWR04" H 5550 5050 50  0001 C CNN
+F 1 "GND" H 5555 5127 50  0000 C CNN
+F 2 "" H 5550 5300 50  0001 C CNN
+F 3 "" H 5550 5300 50  0001 C CNN
+	1    5550 5300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 5300 5550 5250
+Wire Wire Line
+	5550 5250 5350 5250
+Connection ~ 5350 5250
+Wire Wire Line
+	5350 5250 5350 5100
+Wire Wire Line
+	3800 5400 4000 5400
+Wire Wire Line
+	3800 5100 4600 5100
+Connection ~ 4600 5100
+$Comp
+L USER_Test_Points:TestPoint TP1
+U 1 1 604587A3
+P 6200 6000
+F 0 "TP1" H 6258 6118 50  0001 L CNN
+F 1 "NRST" V 6200 6300 50  0000 C CNN
+F 2 "USER_TestPoint:TestPoint_Pad_1.0x1.0mm" H 6400 6000 50  0001 C CNN
+F 3 "~" H 6400 6000 50  0001 C CNN
+	1    6200 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Capacitor C20
+U 1 1 6045CA9A
+P 7200 6100
+F 0 "C20" V 7250 6300 50  0000 C CNN
+F 1 "100nF" V 7150 6300 50  0000 C CNN
+F 2 "USER_Capacitor_SMD:C_0603_1608Metric" H 7238 5950 50  0001 C CNN
+F 3 "~" H 7200 6100 50  0001 C CNN
+F 4 "0.07" H 7200 6100 50  0001 C CNN "Cost"
+F 5 "100nF, 50V, X7R, 0603" H 7200 6100 50  0001 C CNN "Description"
+F 6 "Samsung" H 7200 6100 50  0001 C CNN "Manufacturer"
+F 7 "CL10B104KB8NNNL" H 7200 6100 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 7200 6100 50  0001 C CNN "Supplier"
+F 9 "1276-CL10B104KB8NNNLCT-ND" H 7200 6100 50  0001 C CNN "Supplier Part Number"
+F 10 "C24452" H 7200 6100 50  0001 C CNN "LCSC Part Number"
+	1    7200 6100
+	0    1    1    0   
+$EndComp
+$Comp
+L USER_Power_Symbols:GND #PWR012
+U 1 1 60461E22
+P 7650 6350
+F 0 "#PWR012" H 7650 6100 50  0001 C CNN
+F 1 "GND" H 7655 6177 50  0000 C CNN
+F 2 "" H 7650 6350 50  0001 C CNN
+F 3 "" H 7650 6350 50  0001 C CNN
+	1    7650 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Switches:SW_Push SW1
+U 1 1 6045ABB5
+P 7200 5900
+F 0 "SW1" H 7200 6185 50  0000 C CNN
+F 1 "SW_Push" V 7245 6048 50  0001 L CNN
+F 2 "USER_Button_Switch_SMD:Panasonic_EVQPUK_EVQPUB" H 7200 6100 50  0001 C CNN
+F 3 "~" H 7200 6100 50  0001 C CNN
+F 4 "NRST" H 7200 6094 50  0000 C CNN "Label"
+F 5 "0.42" H 7200 5900 50  0001 C CNN "Cost"
+F 6 "Tactile Switch, SPST-NO, Momentary, 50mA, 12V" H 7200 5900 50  0001 C CNN "Description"
+F 7 "Panasonic" H 7200 5900 50  0001 C CNN "Manufacturer"
+F 8 "EVQ-PUK02K" H 7200 5900 50  0001 C CNN "Manufacturer Part Number"
+F 9 "Digikey" H 7200 5900 50  0001 C CNN "Supplier"
+F 10 "P10852SCT-ND" H 7200 5900 50  0001 C CNN "Supplier Part Number"
+	1    7200 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Capacitor C12
+U 1 1 60472F85
+P 4100 7200
+F 0 "C12" V 4050 7250 50  0000 L CNN
+F 1 "100nF" V 4150 7250 50  0000 L CNN
+F 2 "USER_Capacitor_SMD:C_0603_1608Metric" H 4138 7050 50  0001 C CNN
+F 3 "~" H 4100 7200 50  0001 C CNN
+F 4 "0.07" H 4100 7200 50  0001 C CNN "Cost"
+F 5 "100nF, 50V, X7R, 0603" H 4100 7200 50  0001 C CNN "Description"
+F 6 "Samsung" H 4100 7200 50  0001 C CNN "Manufacturer"
+F 7 "CL10B104KB8NNNL" H 4100 7200 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 4100 7200 50  0001 C CNN "Supplier"
+F 9 "1276-CL10B104KB8NNNLCT-ND" H 4100 7200 50  0001 C CNN "Supplier Part Number"
+F 10 "C24452" H 4100 7200 50  0001 C CNN "LCSC Part Number"
+	1    4100 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Capacitor C11
+U 1 1 604740AD
+P 3850 7200
+F 0 "C11" V 3800 7250 50  0000 L CNN
+F 1 "100nF" V 3900 7250 50  0000 L CNN
+F 2 "USER_Capacitor_SMD:C_0603_1608Metric" H 3888 7050 50  0001 C CNN
+F 3 "~" H 3850 7200 50  0001 C CNN
+F 4 "0.07" H 3850 7200 50  0001 C CNN "Cost"
+F 5 "100nF, 50V, X7R, 0603" H 3850 7200 50  0001 C CNN "Description"
+F 6 "Samsung" H 3850 7200 50  0001 C CNN "Manufacturer"
+F 7 "CL10B104KB8NNNL" H 3850 7200 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 3850 7200 50  0001 C CNN "Supplier"
+F 9 "1276-CL10B104KB8NNNLCT-ND" H 3850 7200 50  0001 C CNN "Supplier Part Number"
+F 10 "C24452" H 3850 7200 50  0001 C CNN "LCSC Part Number"
+	1    3850 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Capacitor C10
+U 1 1 6047425E
+P 3600 7200
+F 0 "C10" V 3550 7250 50  0000 L CNN
+F 1 "100nF" V 3650 7250 50  0000 L CNN
+F 2 "USER_Capacitor_SMD:C_0603_1608Metric" H 3638 7050 50  0001 C CNN
+F 3 "~" H 3600 7200 50  0001 C CNN
+F 4 "0.07" H 3600 7200 50  0001 C CNN "Cost"
+F 5 "100nF, 50V, X7R, 0603" H 3600 7200 50  0001 C CNN "Description"
+F 6 "Samsung" H 3600 7200 50  0001 C CNN "Manufacturer"
+F 7 "CL10B104KB8NNNL" H 3600 7200 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 3600 7200 50  0001 C CNN "Supplier"
+F 9 "1276-CL10B104KB8NNNLCT-ND" H 3600 7200 50  0001 C CNN "Supplier Part Number"
+F 10 "C24452" H 3600 7200 50  0001 C CNN "LCSC Part Number"
+	1    3600 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Capacitor C9
+U 1 1 60474449
+P 3350 7200
+F 0 "C9" V 3300 7250 50  0000 L CNN
+F 1 "100nF" V 3400 7250 50  0000 L CNN
+F 2 "USER_Capacitor_SMD:C_0603_1608Metric" H 3388 7050 50  0001 C CNN
+F 3 "~" H 3350 7200 50  0001 C CNN
+F 4 "0.07" H 3350 7200 50  0001 C CNN "Cost"
+F 5 "100nF, 50V, X7R, 0603" H 3350 7200 50  0001 C CNN "Description"
+F 6 "Samsung" H 3350 7200 50  0001 C CNN "Manufacturer"
+F 7 "CL10B104KB8NNNL" H 3350 7200 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 3350 7200 50  0001 C CNN "Supplier"
+F 9 "1276-CL10B104KB8NNNLCT-ND" H 3350 7200 50  0001 C CNN "Supplier Part Number"
+F 10 "C24452" H 3350 7200 50  0001 C CNN "LCSC Part Number"
+	1    3350 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Capacitor C8
+U 1 1 60474686
+P 3100 7200
+F 0 "C8" V 3050 7250 50  0000 L CNN
+F 1 "100nF" V 3150 7250 50  0000 L CNN
+F 2 "USER_Capacitor_SMD:C_0603_1608Metric" H 3138 7050 50  0001 C CNN
+F 3 "~" H 3100 7200 50  0001 C CNN
+F 4 "0.07" H 3100 7200 50  0001 C CNN "Cost"
+F 5 "100nF, 50V, X7R, 0603" H 3100 7200 50  0001 C CNN "Description"
+F 6 "Samsung" H 3100 7200 50  0001 C CNN "Manufacturer"
+F 7 "CL10B104KB8NNNL" H 3100 7200 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 3100 7200 50  0001 C CNN "Supplier"
+F 9 "1276-CL10B104KB8NNNLCT-ND" H 3100 7200 50  0001 C CNN "Supplier Part Number"
+F 10 "C24452" H 3100 7200 50  0001 C CNN "LCSC Part Number"
+	1    3100 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Capacitor C6
+U 1 1 60475949
+P 2250 7200
+F 0 "C6" V 2200 7250 50  0000 L CNN
+F 1 "1uF" V 2300 7250 50  0000 L CNN
+F 2 "USER_Capacitor_SMD:C_0603_1608Metric" H 2288 7050 50  0001 C CNN
+F 3 "~" H 2250 7200 50  0001 C CNN
+F 4 "0.07" H 2250 7200 50  0001 C CNN "Cost"
+F 5 "1uF, 10V, X7R, 0603" H 2250 7200 50  0001 C CNN "Description"
+F 6 "Samsung" H 2250 7200 50  0001 C CNN "Manufacturer"
+F 7 "CL10B105KP8NNNC" H 2250 7200 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 2250 7200 50  0001 C CNN "Supplier"
+F 9 "1276-1946-1-ND" H 2250 7200 50  0001 C CNN "Supplier Part Number"
+F 10 "C95843" H 2250 7200 50  0001 C CNN "LCSC Part Number"
+	1    2250 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Capacitor C5
+U 1 1 60475DD0
+P 2000 7200
+F 0 "C5" V 1950 7250 50  0000 L CNN
+F 1 "1uF" V 2050 7250 50  0000 L CNN
+F 2 "USER_Capacitor_SMD:C_0603_1608Metric" H 2038 7050 50  0001 C CNN
+F 3 "~" H 2000 7200 50  0001 C CNN
+F 4 "0.07" H 2000 7200 50  0001 C CNN "Cost"
+F 5 "1uF, 10V, X7R, 0603" H 2000 7200 50  0001 C CNN "Description"
+F 6 "Samsung" H 2000 7200 50  0001 C CNN "Manufacturer"
+F 7 "CL10B105KP8NNNC" H 2000 7200 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 2000 7200 50  0001 C CNN "Supplier"
+F 9 "1276-1946-1-ND" H 2000 7200 50  0001 C CNN "Supplier Part Number"
+F 10 "C95843" H 2000 7200 50  0001 C CNN "LCSC Part Number"
+	1    2000 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Capacitor C4
+U 1 1 60475F91
+P 1750 7200
+F 0 "C4" V 1700 7250 50  0000 L CNN
+F 1 "1uF" V 1800 7250 50  0000 L CNN
+F 2 "USER_Capacitor_SMD:C_0603_1608Metric" H 1788 7050 50  0001 C CNN
+F 3 "~" H 1750 7200 50  0001 C CNN
+F 4 "0.07" H 1750 7200 50  0001 C CNN "Cost"
+F 5 "1uF, 10V, X7R, 0603" H 1750 7200 50  0001 C CNN "Description"
+F 6 "Samsung" H 1750 7200 50  0001 C CNN "Manufacturer"
+F 7 "CL10B105KP8NNNC" H 1750 7200 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 1750 7200 50  0001 C CNN "Supplier"
+F 9 "1276-1946-1-ND" H 1750 7200 50  0001 C CNN "Supplier Part Number"
+F 10 "C95843" H 1750 7200 50  0001 C CNN "LCSC Part Number"
+	1    1750 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Capacitor C3
+U 1 1 6047621C
+P 1500 7200
+F 0 "C3" V 1450 7250 50  0000 L CNN
+F 1 "1uF" V 1550 7250 50  0000 L CNN
+F 2 "USER_Capacitor_SMD:C_0603_1608Metric" H 1538 7050 50  0001 C CNN
+F 3 "~" H 1500 7200 50  0001 C CNN
+F 4 "0.07" H 1500 7200 50  0001 C CNN "Cost"
+F 5 "1uF, 10V, X7R, 0603" H 1500 7200 50  0001 C CNN "Description"
+F 6 "Samsung" H 1500 7200 50  0001 C CNN "Manufacturer"
+F 7 "CL10B105KP8NNNC" H 1500 7200 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 1500 7200 50  0001 C CNN "Supplier"
+F 9 "1276-1946-1-ND" H 1500 7200 50  0001 C CNN "Supplier Part Number"
+F 10 "C95843" H 1500 7200 50  0001 C CNN "LCSC Part Number"
+	1    1500 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Capacitor C19
+U 1 1 604768A2
+P 6900 7200
+F 0 "C19" V 6850 7250 50  0000 L CNN
+F 1 "1uF" V 6950 7250 50  0000 L CNN
+F 2 "USER_Capacitor_SMD:C_0603_1608Metric" H 6938 7050 50  0001 C CNN
+F 3 "~" H 6900 7200 50  0001 C CNN
+F 4 "0.07" H 6900 7200 50  0001 C CNN "Cost"
+F 5 "1uF, 10V, X7R, 0603" H 6900 7200 50  0001 C CNN "Description"
+F 6 "Samsung" H 6900 7200 50  0001 C CNN "Manufacturer"
+F 7 "CL10B105KP8NNNC" H 6900 7200 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 6900 7200 50  0001 C CNN "Supplier"
+F 9 "1276-1946-1-ND" H 6900 7200 50  0001 C CNN "Supplier Part Number"
+F 10 "C95843" H 6900 7200 50  0001 C CNN "LCSC Part Number"
+	1    6900 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Capacitor C18
+U 1 1 60476E63
+P 6650 7200
+F 0 "C18" V 6600 7250 50  0000 L CNN
+F 1 "100nF" V 6700 7250 50  0000 L CNN
+F 2 "USER_Capacitor_SMD:C_0603_1608Metric" H 6688 7050 50  0001 C CNN
+F 3 "~" H 6650 7200 50  0001 C CNN
+F 4 "0.07" H 6650 7200 50  0001 C CNN "Cost"
+F 5 "100nF, 50V, X7R, 0603" H 6650 7200 50  0001 C CNN "Description"
+F 6 "Samsung" H 6650 7200 50  0001 C CNN "Manufacturer"
+F 7 "CL10B104KB8NNNL" H 6650 7200 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 6650 7200 50  0001 C CNN "Supplier"
+F 9 "1276-CL10B104KB8NNNLCT-ND" H 6650 7200 50  0001 C CNN "Supplier Part Number"
+F 10 "C24452" H 6650 7200 50  0001 C CNN "LCSC Part Number"
+	1    6650 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Capacitor C15
+U 1 1 60477450
+P 6400 7200
+F 0 "C15" V 6350 7250 50  0000 L CNN
+F 1 "10nF" V 6450 7250 50  0000 L CNN
+F 2 "USER_Capacitor_SMD:C_0603_1608Metric" H 6438 7050 50  0001 C CNN
+F 3 "~" H 6400 7200 50  0001 C CNN
+F 4 "0.07" H 6400 7200 50  0001 C CNN "Cost"
+F 5 "10nF, 50V, X7R, 0603" H 6400 7200 50  0001 C CNN "Description"
+F 6 "Samsung" H 6400 7200 50  0001 C CNN "Manufacturer"
+F 7 "CL10B103KB8NNNC" H 6400 7200 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 6400 7200 50  0001 C CNN "Supplier"
+F 9 "1276-1009-1-ND" H 6400 7200 50  0001 C CNN "Supplier Part Number"
+F 10 "C1589" H 6400 7200 50  0001 C CNN "LCSC Part Number"
+	1    6400 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Ferrite_Bead FB1
+U 1 1 604776AE
+P 7650 6900
+F 0 "FB1" V 7550 6900 50  0000 C CNN
+F 1 "1k, 600mA" V 7750 6900 50  0000 C CNN
+F 2 "USER_Inductor_SMD:L_0603_1608Metric" V 7530 6950 50  0001 C CNN
+F 3 "~" H 7600 6950 50  0001 C CNN
+F 4 "0.12" H 7650 6900 50  0001 C CNN "Cost"
+F 5 "Ferrite Bead, 1kR@100MHz, 300mR, 600mA, 0603" H 7650 6900 50  0001 C CNN "Description"
+F 6 "Wurth" H 7650 6900 50  0001 C CNN "Manufacturer"
+F 7 "742792662" H 7650 6900 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 7650 6900 50  0001 C CNN "Supplier"
+F 9 "732-4670-1-ND" H 7650 6900 50  0001 C CNN "Supplier Part Number"
+F 10 "C85824" H 7650 6900 50  0001 C CNN "LCSC Part Number"
+	1    7650 6900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6900 7400 6900 7350
+Wire Wire Line
+	6650 7350 6650 7400
+Connection ~ 6650 7400
+Wire Wire Line
+	6650 7400 6900 7400
+Wire Wire Line
+	6400 7350 6400 7400
+Connection ~ 6400 7400
+Wire Wire Line
+	6400 7400 6650 7400
+$Comp
+L USER_Power_Symbols:GND #PWR09
+U 1 1 6047E2DE
+P 6900 7450
+F 0 "#PWR09" H 6900 7200 50  0001 C CNN
+F 1 "GND" H 6905 7277 50  0000 C CNN
+F 2 "" H 6900 7450 50  0001 C CNN
+F 3 "" H 6900 7450 50  0001 C CNN
+	1    6900 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 7450 6900 7400
+Connection ~ 6900 7400
+Wire Wire Line
+	6900 7050 6900 6900
+Connection ~ 6900 6900
+Wire Wire Line
+	6900 6900 6650 6900
+Wire Wire Line
+	6650 7050 6650 6900
+Connection ~ 6650 6900
+Wire Wire Line
+	6650 6900 6400 6900
+Wire Wire Line
+	6400 7050 6400 6900
+Connection ~ 6400 6900
+Wire Wire Line
+	6400 6900 6200 6900
+$Comp
+L USER_Passives:Capacitor C17
+U 1 1 6048A458
+P 6450 6700
+F 0 "C17" V 6500 6900 50  0000 R CNN
+F 1 "2u2F" V 6400 6800 50  0000 L CNN
+F 2 "USER_Capacitor_SMD:C_0603_1608Metric" H 6488 6550 50  0001 C CNN
+F 3 "~" H 6450 6700 50  0001 C CNN
+F 4 "0.09" H 6450 6700 50  0001 C CNN "Cost"
+F 5 "2.2uF, 10V, X7R, 0603" H 6450 6700 50  0001 C CNN "Description"
+F 6 "Samsung" H 6450 6700 50  0001 C CNN "Manufacturer"
+F 7 "CL10B225KP8NFNC" H 6450 6700 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 6450 6700 50  0001 C CNN "Supplier"
+F 9 "1276-2016-1-ND" H 6450 6700 50  0001 C CNN "Supplier Part Number"
+F 10 "C23630" H 6450 6700 50  0001 C CNN "LCSC Part Number"
+	1    6450 6700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6300 6700 6100 6700
+Wire Wire Line
+	6800 6700 6600 6700
+Wire Wire Line
+	4700 6800 4100 6800
+Wire Wire Line
+	4100 6800 4100 7050
+Wire Wire Line
+	4700 6700 3850 6700
+Wire Wire Line
+	3850 6700 3850 7050
+Wire Wire Line
+	4700 6600 3600 6600
+Wire Wire Line
+	3600 6600 3600 7050
+Wire Wire Line
+	4700 6500 3350 6500
+Wire Wire Line
+	3350 6500 3350 7050
+Wire Wire Line
+	4700 6400 3100 6400
+Wire Wire Line
+	4700 7100 4550 7100
+Wire Wire Line
+	4550 7100 4550 7200
+Wire Wire Line
+	4550 7400 4700 7400
+Wire Wire Line
+	4700 7300 4550 7300
+Connection ~ 4550 7300
+Wire Wire Line
+	4550 7300 4550 7400
+Wire Wire Line
+	4700 7200 4550 7200
+Connection ~ 4550 7200
+Wire Wire Line
+	4550 7200 4550 7300
+Wire Wire Line
+	3100 6400 3100 7050
+$Comp
+L USER_Passives:Capacitor C2
+U 1 1 604E72AE
+P 1150 7200
+F 0 "C2" V 1100 7250 50  0000 L CNN
+F 1 "2u2F" V 1200 7250 50  0000 L CNN
+F 2 "USER_Capacitor_SMD:C_0603_1608Metric" H 1188 7050 50  0001 C CNN
+F 3 "~" H 1150 7200 50  0001 C CNN
+F 4 "0.09" H 1150 7200 50  0001 C CNN "Cost"
+F 5 "2.2uF, 10V, X7R, 0603" H 1150 7200 50  0001 C CNN "Description"
+F 6 "Samsung" H 1150 7200 50  0001 C CNN "Manufacturer"
+F 7 "CL10B225KP8NFNC" H 1150 7200 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 1150 7200 50  0001 C CNN "Supplier"
+F 9 "1276-2016-1-ND" H 1150 7200 50  0001 C CNN "Supplier Part Number"
+F 10 "C23630" H 1150 7200 50  0001 C CNN "LCSC Part Number"
+	1    1150 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 7400 4100 7400
+Wire Wire Line
+	1150 7400 1150 7350
+Connection ~ 4550 7400
+Wire Wire Line
+	1500 7350 1500 7400
+Connection ~ 1500 7400
+Wire Wire Line
+	1500 7400 1150 7400
+Wire Wire Line
+	1750 7350 1750 7400
+Connection ~ 1750 7400
+Wire Wire Line
+	1750 7400 1500 7400
+Wire Wire Line
+	2000 7350 2000 7400
+Connection ~ 2000 7400
+Wire Wire Line
+	2000 7400 1750 7400
+Wire Wire Line
+	2250 7350 2250 7400
+Wire Wire Line
+	2250 7400 2000 7400
+Wire Wire Line
+	3100 7350 3100 7400
+Wire Wire Line
+	3350 7350 3350 7400
+Connection ~ 3350 7400
+Wire Wire Line
+	3350 7400 3100 7400
+Wire Wire Line
+	3600 7350 3600 7400
+Connection ~ 3600 7400
+Wire Wire Line
+	3600 7400 3350 7400
+Wire Wire Line
+	3850 7350 3850 7400
+Connection ~ 3850 7400
+Wire Wire Line
+	3850 7400 3600 7400
+Wire Wire Line
+	4100 7350 4100 7400
+Connection ~ 4100 7400
+Wire Wire Line
+	4100 7400 3850 7400
+Wire Wire Line
+	7050 6100 6900 6100
+Wire Wire Line
+	6900 5900 7000 5900
+Wire Wire Line
+	6100 6100 6200 6100
+Connection ~ 6900 6100
+Text Label 1400 2200 0    50   ~ 0
+SWDIO
+Text Label 1400 2300 0    50   ~ 0
+SWCLK
+Text Notes 3900 5650 0    50   ~ 0
+External Oscillator needed for USB
+Text Label 6800 6100 2    50   ~ 0
+NRST
+$Comp
+L USER_Power_Symbols:+3V3 #PWR01
+U 1 1 6052ECAB
+P 900 6000
+F 0 "#PWR01" H 900 5850 50  0001 C CNN
+F 1 "+3V3" H 915 6173 50  0000 C CNN
+F 2 "" H 900 6000 50  0001 C CNN
+F 3 "" H 900 6000 50  0001 C CNN
+	1    900  6000
+	1    0    0    -1  
+$EndComp
+Text Label 1400 1400 0    50   ~ 0
+SPI1_SCK
+Text Label 1400 1500 0    50   ~ 0
+SPI1_MISO
+Text Label 1400 3000 0    50   ~ 0
+SPI1_MOSI
+$Comp
+L USER_Processors:STM32F401VxTx U1
+U 1 1 6052DDD1
+P 2400 900
+F 0 "U1" H 3100 1167 50  0000 C CNN
+F 1 "STM32F401VCT6" H 3100 1076 50  0000 C CNN
+F 2 "USER_Package_QFP:LQFP-100_14x14mm_P0.5mm" H 2600 -4000 50  0001 R CNN
+F 3 "" H 3300 -1500 50  0001 C CNN
+F 4 "5.55" H 2400 900 50  0001 C CNN "Cost"
+F 5 "ARM Cortex M4 STM32F4 Microcontroller 32 bit, 84MHz, 256kB, 100-LQFP" H 2400 900 50  0001 C CNN "Description"
+F 6 "STMicroelectronics" H 2400 900 50  0001 C CNN "Manufacturer"
+F 7 "STM32F401VCT6" H 2400 900 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 2400 900 50  0001 C CNN "Supplier"
+F 9 "497-14048-ND" H 2400 900 50  0001 C CNN "Supplier Part Number"
+F 10 "C382005" H 2400 900 50  0001 C CNN "LCSC Part Number"
+	1    2400 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Processors:STM32F401VxTx U1
+U 2 1 60530838
+P 4700 6100
+F 0 "U1" H 5400 6367 50  0000 C CNN
+F 1 "STM32F401VCT6" H 5400 6276 50  0000 C CNN
+F 2 "USER_Package_QFP:LQFP-100_14x14mm_P0.5mm" H 4900 1200 50  0001 R CNN
+F 3 "" H 5600 3700 50  0001 C CNN
+F 4 "5.55" H 4700 6100 50  0001 C CNN "Cost"
+F 5 "ARM Cortex M4 STM32F4 Microcontroller 32 bit, 84MHz, 256kB, 100-LQFP" H 4700 6100 50  0001 C CNN "Description"
+F 6 "STMicroelectronics" H 4700 6100 50  0001 C CNN "Manufacturer"
+F 7 "STM32F401VCT6" H 4700 6100 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 4700 6100 50  0001 C CNN "Supplier"
+F 9 "497-14048-ND" H 4700 6100 50  0001 C CNN "Supplier Part Number"
+F 10 "C382005" H 4700 6100 50  0001 C CNN "LCSC Part Number"
+	2    4700 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Capacitor C7
+U 1 1 6055901B
+P 2850 7200
+F 0 "C7" V 2800 7250 50  0000 L CNN
+F 1 "100nF" V 2900 7250 50  0000 L CNN
+F 2 "USER_Capacitor_SMD:C_0603_1608Metric" H 2888 7050 50  0001 C CNN
+F 3 "~" H 2850 7200 50  0001 C CNN
+F 4 "0.07" H 2850 7200 50  0001 C CNN "Cost"
+F 5 "100nF, 50V, X7R, 0603" H 2850 7200 50  0001 C CNN "Description"
+F 6 "Samsung" H 2850 7200 50  0001 C CNN "Manufacturer"
+F 7 "CL10B104KB8NNNL" H 2850 7200 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 2850 7200 50  0001 C CNN "Supplier"
+F 9 "1276-CL10B104KB8NNNLCT-ND" H 2850 7200 50  0001 C CNN "Supplier Part Number"
+F 10 "C24452" H 2850 7200 50  0001 C CNN "LCSC Part Number"
+	1    2850 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 7350 2850 7400
+Connection ~ 2850 7400
+Connection ~ 3100 7400
+Wire Wire Line
+	2850 7400 3100 7400
+Wire Wire Line
+	2850 7050 2850 6300
+Wire Wire Line
+	2850 6300 4700 6300
+Connection ~ 4100 6800
+Text Notes 2750 7550 2    50   ~ 0
+1uF decoupling at each corner of IC
+Wire Wire Line
+	1150 6100 1150 7050
+Wire Wire Line
+	2250 6800 4100 6800
+Connection ~ 3850 6700
+Wire Wire Line
+	1750 6600 3600 6600
+Connection ~ 3600 6600
+Connection ~ 3350 6500
+Connection ~ 2250 7400
+$Comp
+L USER_Power_Symbols:GND #PWR02
+U 1 1 60661BF8
+P 900 7500
+F 0 "#PWR02" H 900 7250 50  0001 C CNN
+F 1 "GND" H 905 7327 50  0000 C CNN
+F 2 "" H 900 7500 50  0001 C CNN
+F 3 "" H 900 7500 50  0001 C CNN
+	1    900  7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 6100 1500 6100
+Connection ~ 1150 6100
+Wire Wire Line
+	4700 7000 4550 7000
+Wire Wire Line
+	4550 7000 4550 7100
+Connection ~ 4550 7100
+Wire Wire Line
+	2250 6800 2250 7050
+Wire Wire Line
+	2000 7050 2000 6700
+Wire Wire Line
+	2000 6700 3850 6700
+Wire Wire Line
+	1750 6600 1750 7050
+Wire Wire Line
+	1500 6500 1500 7050
+Wire Wire Line
+	1500 6500 3350 6500
+Wire Wire Line
+	2250 6800 2250 6100
+Connection ~ 2250 6800
+Connection ~ 2250 6100
+Connection ~ 2000 6100
+Wire Wire Line
+	2000 6100 2250 6100
+Wire Wire Line
+	2000 6100 2000 6700
+Connection ~ 2000 6700
+Wire Wire Line
+	1750 6600 1750 6100
+Connection ~ 1750 6600
+Connection ~ 1750 6100
+Wire Wire Line
+	1750 6100 2000 6100
+Wire Wire Line
+	1500 6500 1500 6100
+Connection ~ 1500 6500
+Connection ~ 1500 6100
+Wire Wire Line
+	1500 6100 1750 6100
+Wire Wire Line
+	2850 6300 2850 6100
+Connection ~ 2850 6300
+Connection ~ 2850 6100
+Wire Wire Line
+	2850 6100 3100 6100
+Wire Wire Line
+	3100 6400 3100 6100
+Connection ~ 3100 6400
+Connection ~ 3100 6100
+Wire Wire Line
+	3100 6100 4700 6100
+Wire Wire Line
+	6900 5900 6900 6100
+Wire Wire Line
+	6200 6100 6900 6100
+Connection ~ 6200 6100
+Wire Wire Line
+	6200 6000 6200 6100
+Wire Wire Line
+	6400 6000 6400 6300
+Wire Wire Line
+	6400 6300 6100 6300
+Wire Wire Line
+	6400 6300 7050 6300
+Connection ~ 6400 6300
+Text Label 6800 6300 2    50   ~ 0
+BOOT0
+$Comp
+L USER_Passives:Capacitor C16
+U 1 1 60799DA1
+P 6450 6500
+F 0 "C16" V 6500 6700 50  0000 R CNN
+F 1 "2u2F" V 6400 6600 50  0000 L CNN
+F 2 "USER_Capacitor_SMD:C_0603_1608Metric" H 6488 6350 50  0001 C CNN
+F 3 "~" H 6450 6500 50  0001 C CNN
+F 4 "0.09" H 6450 6500 50  0001 C CNN "Cost"
+F 5 "2.2uF, 10V, X7R, 0603" H 6450 6500 50  0001 C CNN "Description"
+F 6 "Samsung" H 6450 6500 50  0001 C CNN "Manufacturer"
+F 7 "CL10B225KP8NFNC" H 6450 6500 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 6450 6500 50  0001 C CNN "Supplier"
+F 9 "1276-2016-1-ND" H 6450 6500 50  0001 C CNN "Supplier Part Number"
+F 10 "C23630" H 6450 6500 50  0001 C CNN "LCSC Part Number"
+	1    6450 6500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6600 6500 6800 6500
+Wire Wire Line
+	6800 6500 6800 6600
+Wire Wire Line
+	6300 6500 6100 6500
+Wire Wire Line
+	6800 6600 7050 6600
+Wire Wire Line
+	7050 6600 7050 6650
+Connection ~ 6800 6600
+Wire Wire Line
+	6800 6600 6800 6700
+Wire Wire Line
+	6100 7400 6400 7400
+Wire Wire Line
+	6100 7100 6200 7100
+Wire Wire Line
+	6200 7100 6200 6900
+Connection ~ 6200 6900
+Wire Wire Line
+	6200 6900 6100 6900
+Wire Wire Line
+	6900 6900 7500 6900
+Text Label 7450 6900 2    50   ~ 0
+VREF+
+Wire Wire Line
+	7350 6300 7650 6300
+Wire Wire Line
+	7650 6300 7650 6350
+Wire Wire Line
+	7400 5900 7650 5900
+Wire Wire Line
+	7650 5900 7650 6100
+Connection ~ 7650 6300
+Wire Wire Line
+	7350 6100 7650 6100
+Connection ~ 7650 6100
+Wire Wire Line
+	7650 6100 7650 6300
+Text Label 1400 2800 0    50   ~ 0
+SWO
+Wire Wire Line
+	1400 2800 2400 2800
+Text Label 1400 900  0    50   ~ 0
+PA0
+Text Notes 2350 900  2    50   ~ 0
+TIM2_CH1
+Text Notes 2350 1000 2    50   ~ 0
+TIM2_CH2
+Text Notes 2350 1100 2    50   ~ 0
+ADC_IN2
+Text Notes 2350 1200 2    50   ~ 0
+TIM2_CH4
+Text Notes 2350 1300 2    50   ~ 0
+ADC_IN4
+Text Notes 2350 4500 2    50   ~ 0
+ADC_IN14
+Text Notes 2350 4600 2    50   ~ 0
+ADC_IN15
+Text Notes 2350 1600 2    50   ~ 0
+ADC_IN7
+Text Notes 2350 1800 2    50   ~ 0
+USART1_TX
+Text Notes 2350 1900 2    50   ~ 0
+USART1_RX
+Text Notes 2350 2600 2    50   ~ 0
+ADC_IN8
+Text Notes 2350 2700 2    50   ~ 0
+ADC_IN9
+Text Notes 2350 2900 2    50   ~ 0
+TIM3_CH1
+Text Notes 2350 3100 2    50   ~ 0
+I2C_SCL
+Text Notes 2350 3200 2    50   ~ 0
+I2C_SCA
+Text Notes 2350 3500 2    50   ~ 0
+TIM2_CH3
+Text Notes 2350 3600 2    50   ~ 0
+I2S2_WS
+Text Notes 2350 3700 2    50   ~ 0
+I2S2_CK
+Text Notes 2350 3900 2    50   ~ 0
+I2S2_SD
+Text Notes 2350 4100 2    50   ~ 0
+ADC_IN10
+Text Notes 2350 4200 2    50   ~ 0
+ADC_IN11
+Text Notes 2350 4300 2    50   ~ 0
+ADC_IN12
+Text Notes 2350 4400 2    50   ~ 0
+ADC_IN13
+Text Notes 2350 4700 2    50   ~ 0
+I2S2_MCK
+Text Notes 2350 4800 2    50   ~ 0
+TIM3_CH2
+Text Notes 2350 4900 2    50   ~ 0
+TIM3_CH3
+Text Notes 2350 5000 2    50   ~ 0
+TIM3_CH4
+Text Notes 2350 5100 2    50   ~ 0
+SPI3_SCK
+Text Notes 2350 5200 2    50   ~ 0
+SPI3_MISO
+Text Notes 2350 5300 2    50   ~ 0
+SPI3_MOSI
+Text Notes 3850 1400 0    50   ~ 0
+USART2_TX
+Text Notes 3850 1500 0    50   ~ 0
+USART2_RX
+Text Notes 3850 2100 0    50   ~ 0
+TIM4_CH1
+Text Notes 3850 2200 0    50   ~ 0
+TIM4_CH2
+Text Notes 3850 2300 0    50   ~ 0
+TIM4_CH3
+Text Notes 3850 2400 0    50   ~ 0
+TIM4_CH4
+Text Notes 3850 3500 0    50   ~ 0
+TIM1_CH1
+Text Notes 3850 3700 0    50   ~ 0
+TIM1_CH2
+Text Notes 3850 3900 0    50   ~ 0
+TIM1_CH3
+Text Notes 3850 4000 0    50   ~ 0
+TIM1_CH4
+Text Notes 3850 3400 0    50   ~ 0
+TIM1_CH1N
+Text Notes 3850 3600 0    50   ~ 0
+TIM1_CH2N
+Text Notes 3850 3800 0    50   ~ 0
+TIM1_CH3N
+Text Label 1400 1000 0    50   ~ 0
+PA1
+Text Label 1400 1100 0    50   ~ 0
+PA2
+Wire Wire Line
+	2400 1100 1400 1100
+Text Label 1400 1200 0    50   ~ 0
+PA3
+Text Label 1400 1300 0    50   ~ 0
+PA4
+Text Label 1400 1600 0    50   ~ 0
+PA7
+Text Label 1400 1700 0    50   ~ 0
+PA8
+Text Label 1400 1800 0    50   ~ 0
+PA9
+Wire Wire Line
+	1400 1800 2400 1800
+Text Label 1400 1900 0    50   ~ 0
+PA10
+Wire Wire Line
+	1400 2200 2400 2200
+Wire Wire Line
+	1400 2300 2400 2300
+Text Label 1400 2400 0    50   ~ 0
+PA15
+Text Label 1400 2600 0    50   ~ 0
+PB0
+Text Label 1400 2700 0    50   ~ 0
+PB1
+Text Label 1400 2900 0    50   ~ 0
+PB4
+Text Label 1400 3100 0    50   ~ 0
+PB6
+Text Label 1400 3200 0    50   ~ 0
+PB7
+Text Label 1400 3300 0    50   ~ 0
+PB8
+Text Label 1400 3400 0    50   ~ 0
+PB9
+Text Label 1400 3500 0    50   ~ 0
+PB10
+Text Label 1400 3600 0    50   ~ 0
+PB12
+Text Label 1400 3700 0    50   ~ 0
+PB13
+Text Label 1400 3800 0    50   ~ 0
+PB14
+Text Label 1400 3900 0    50   ~ 0
+PB15
+Text Label 1400 4100 0    50   ~ 0
+PC0
+Text Label 1400 4200 0    50   ~ 0
+PC1
+Text Label 1400 4300 0    50   ~ 0
+PC2
+Text Label 1400 4400 0    50   ~ 0
+PC3
+Text Label 1400 4500 0    50   ~ 0
+PC4
+Text Label 1400 4600 0    50   ~ 0
+PC5
+Text Label 1400 4700 0    50   ~ 0
+PC6
+Text Label 1400 4800 0    50   ~ 0
+PC7
+Text Label 1400 4900 0    50   ~ 0
+PC8
+Text Label 1400 5000 0    50   ~ 0
+PC9
+Text Label 1400 5100 0    50   ~ 0
+PC10
+Text Label 1400 5200 0    50   ~ 0
+PC11
+Text Label 1400 5300 0    50   ~ 0
+PC12
+Text Label 1400 5400 0    50   ~ 0
+PC13
+Text Label 4800 900  2    50   ~ 0
+PD0
+Text Label 4800 1000 2    50   ~ 0
+PD1
+Text Label 4800 1100 2    50   ~ 0
+PD2
+Text Label 4800 1200 2    50   ~ 0
+PD3
+Text Label 4800 1300 2    50   ~ 0
+PD4
+Text Label 4800 1400 2    50   ~ 0
+PD5
+Text Label 4800 1500 2    50   ~ 0
+PD6
+Text Label 4800 1600 2    50   ~ 0
+PD7
+Text Label 4800 1700 2    50   ~ 0
+PD8
+Text Label 4800 1800 2    50   ~ 0
+PD9
+Text Label 4800 1900 2    50   ~ 0
+PD10
+Text Label 4800 2000 2    50   ~ 0
+PD11
+Text Label 4800 2100 2    50   ~ 0
+PD12
+Text Label 4800 2200 2    50   ~ 0
+PD13
+Text Label 4800 2300 2    50   ~ 0
+PD14
+Text Label 4800 2400 2    50   ~ 0
+PD15
+Text Label 4800 2600 2    50   ~ 0
+PE0
+Text Label 4800 2700 2    50   ~ 0
+PE1
+Text Label 4800 2800 2    50   ~ 0
+PE2
+Text Label 4800 2900 2    50   ~ 0
+PE3
+Text Label 4800 3000 2    50   ~ 0
+PE4
+Text Label 4800 3100 2    50   ~ 0
+PE5
+Text Label 4800 3200 2    50   ~ 0
+PE6
+Text Label 4800 3300 2    50   ~ 0
+PE7
+Text Label 4800 3400 2    50   ~ 0
+PE8
+Text Label 4800 3500 2    50   ~ 0
+PE9
+Text Label 4800 3600 2    50   ~ 0
+PE10
+Text Label 4800 3700 2    50   ~ 0
+PE11
+Text Label 4800 3800 2    50   ~ 0
+PE12
+Text Label 4800 3900 2    50   ~ 0
+PE13
+Text Label 4800 4000 2    50   ~ 0
+PE14
+Text Label 4800 4100 2    50   ~ 0
+PE15
+Wire Wire Line
+	2400 1900 1400 1900
+Wire Wire Line
+	1400 3100 2400 3100
+Wire Wire Line
+	2400 3200 1400 3200
+Wire Wire Line
+	1400 3300 2400 3300
+Wire Wire Line
+	2400 3400 1400 3400
+Wire Wire Line
+	2400 3600 1400 3600
+Wire Wire Line
+	1400 3700 2400 3700
+Wire Wire Line
+	1400 3900 2400 3900
+Wire Wire Line
+	1400 4500 2400 4500
+Wire Wire Line
+	2400 4600 1400 4600
+Wire Wire Line
+	1400 4700 2400 4700
+Wire Wire Line
+	1400 5100 2400 5100
+Wire Wire Line
+	2400 5200 1400 5200
+Wire Wire Line
+	1400 5300 2400 5300
+Wire Wire Line
+	4800 900  3800 900 
+Wire Wire Line
+	3800 1000 4800 1000
+Wire Wire Line
+	4800 1100 3800 1100
+Wire Wire Line
+	3800 1200 4800 1200
+Wire Wire Line
+	4800 1300 3800 1300
+Wire Wire Line
+	3800 1400 4800 1400
+Wire Wire Line
+	4800 1500 3800 1500
+Wire Wire Line
+	3800 2000 4800 2000
+Wire Wire Line
+	4800 2100 3800 2100
+Wire Wire Line
+	3800 2200 4800 2200
+Wire Wire Line
+	4800 2300 3800 2300
+Wire Wire Line
+	3800 2400 4800 2400
+Wire Wire Line
+	4800 2600 3800 2600
+Wire Wire Line
+	3800 2700 4800 2700
+Wire Wire Line
+	4800 2800 3800 2800
+Wire Wire Line
+	3800 2900 4800 2900
+Wire Wire Line
+	4800 3000 3800 3000
+Wire Wire Line
+	3800 3400 4800 3400
+Wire Wire Line
+	4800 3500 3800 3500
+Wire Wire Line
+	3800 3600 4800 3600
+Wire Wire Line
+	3800 3700 4800 3700
+Wire Wire Line
+	3800 3800 4800 3800
+Wire Wire Line
+	4800 3900 3800 3900
+Wire Wire Line
+	3800 4000 4800 4000
+Wire Wire Line
+	4800 4100 3800 4100
+$Comp
+L USER_Connectors_Generic:Conn_01x06 J3
+U 1 1 60555FFA
+P 10150 6100
+F 0 "J3" H 10150 6450 50  0000 C CNN
+F 1 "Tag Connect" H 10068 6426 50  0001 C CNN
+F 2 "USER_Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical" H 10150 6100 50  0001 C CNN
+F 3 "~" H 10150 6100 50  0001 C CNN
+F 4 "Tag-Connect SWD" H 10600 6050 50  0000 C CNN "Label"
+F 5 "" H 10150 6100 50  0001 C CNN "Variant"
+	1    10150 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Power_Symbols:+3V3 #PWR020
+U 1 1 60556E49
+P 9800 5500
+F 0 "#PWR020" H 9800 5350 50  0001 C CNN
+F 1 "+3V3" H 9815 5673 50  0000 C CNN
+F 2 "" H 9800 5500 50  0001 C CNN
+F 3 "" H 9800 5500 50  0001 C CNN
+	1    9800 5500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Resistor R7
+U 1 1 60557588
+P 9800 5700
+F 0 "R7" H 9850 5650 50  0000 L CNN
+F 1 "0R" H 9850 5750 50  0000 L CNN
+F 2 "USER_Resistor_SMD:R_0603_1608Metric" V 9730 5700 50  0001 C CNN
+F 3 "~" H 9800 5700 50  0001 C CNN
+F 4 "0.07" H 9800 5700 50  0001 C CNN "Cost"
+F 5 "0R, 0.1W, 0603" H 9800 5700 50  0001 C CNN "Description"
+F 6 "Yageo" H 9800 5700 50  0001 C CNN "Manufacturer"
+F 7 "RC0603JR-070RL" H 9800 5700 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 9800 5700 50  0001 C CNN "Supplier"
+F 9 "311-0.0GRCT-ND" H 9800 5700 50  0001 C CNN "Supplier Part Number"
+F 10 "C21189" H 9800 5700 50  0001 C CNN "LCSC Part Number"
+	1    9800 5700
+	-1   0    0    1   
+$EndComp
+$Comp
+L USER_Power_Symbols:GND #PWR021
+U 1 1 6056C83A
+P 9800 6550
+F 0 "#PWR021" H 9800 6300 50  0001 C CNN
+F 1 "GND" H 9805 6377 50  0000 C CNN
+F 2 "" H 9800 6550 50  0001 C CNN
+F 3 "" H 9800 6550 50  0001 C CNN
+	1    9800 6550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 5500 9800 5550
+Wire Wire Line
+	9800 5850 9800 5900
+Wire Wire Line
+	9950 5900 9800 5900
+Wire Wire Line
+	9950 6000 9300 6000
+Wire Wire Line
+	9950 6200 9300 6200
+Wire Wire Line
+	9950 6300 9800 6300
+Text Label 9300 6200 0    50   ~ 0
+SWCLK
+Text Label 9300 6000 0    50   ~ 0
+SWDIO
+Text Label 9300 6100 0    50   ~ 0
+NRST
+Wire Wire Line
+	9300 6100 9950 6100
+Wire Wire Line
+	9800 6300 9800 6550
+Text Label 9300 6400 0    50   ~ 0
+SWO
+Wire Wire Line
+	9950 6400 9300 6400
+Text Label 4800 4600 2    50   ~ 0
+PC14
+Text Label 4800 4900 2    50   ~ 0
+PC15
+Wire Wire Line
+	4800 4900 3800 4900
+Wire Wire Line
+	3800 4600 4800 4600
+Text HLabel 1350 1400 0    50   Output ~ 0
+SPI_SCK
+Text HLabel 1350 1500 0    50   Input ~ 0
+SPI_MISO
+Wire Wire Line
+	1350 1400 2400 1400
+Wire Wire Line
+	1350 1500 2400 1500
+Text HLabel 1350 3000 0    50   Output ~ 0
+SPI_MOSI
+Wire Wire Line
+	1350 3000 2400 3000
+Text HLabel 1350 4400 0    50   BiDi ~ 0
+PC3
+Text HLabel 1350 1200 0    50   BiDi ~ 0
+PA3
+Text HLabel 1350 5400 0    50   BiDi ~ 0
+PC13
+Wire Wire Line
+	1350 1200 2400 1200
+Wire Wire Line
+	1350 4400 2400 4400
+Wire Wire Line
+	1350 5400 2400 5400
+Text HLabel 4850 3200 2    50   BiDi ~ 0
+PE6
+Text HLabel 1350 1000 0    50   BiDi ~ 0
+PA1
+Text HLabel 1350 4300 0    50   BiDi ~ 0
+PC2
+Wire Wire Line
+	1350 1000 2400 1000
+Wire Wire Line
+	1350 4300 2400 4300
+Wire Wire Line
+	3800 3200 4850 3200
+Text HLabel 4850 3100 2    50   BiDi ~ 0
+PE5
+Text HLabel 1350 900  0    50   BiDi ~ 0
+PA0
+Text HLabel 1350 4200 0    50   BiDi ~ 0
+PC1
+Wire Wire Line
+	1350 900  2400 900 
+Wire Wire Line
+	1350 4200 2400 4200
+Wire Wire Line
+	3800 3100 4850 3100
+Text HLabel 1350 3500 0    50   BiDi ~ 0
+PB10
+Text HLabel 1350 1300 0    50   BiDi ~ 0
+PA4
+Text HLabel 4850 3300 2    50   BiDi ~ 0
+PE7
+Wire Wire Line
+	1350 1300 2400 1300
+Wire Wire Line
+	1350 3500 2400 3500
+Wire Wire Line
+	3800 3300 4850 3300
+Text HLabel 1350 2900 0    50   BiDi ~ 0
+PB4
+Text HLabel 1350 4100 0    50   BiDi ~ 0
+PC0
+Text HLabel 4850 1600 2    50   BiDi ~ 0
+PD7
+Wire Wire Line
+	1350 2900 2400 2900
+Wire Wire Line
+	1350 4100 2400 4100
+Wire Wire Line
+	3800 1600 4850 1600
+Text HLabel 1350 4800 0    50   BiDi ~ 0
+PC7
+Text HLabel 1350 1600 0    50   BiDi ~ 0
+PA7
+Text HLabel 1350 3800 0    50   BiDi ~ 0
+PB14
+Wire Wire Line
+	1350 1600 2400 1600
+Wire Wire Line
+	1350 4800 2400 4800
+Wire Wire Line
+	1350 3800 2400 3800
+Text HLabel 1350 4900 0    50   BiDi ~ 0
+PC8
+Text HLabel 1350 2600 0    50   BiDi ~ 0
+PB0
+Text HLabel 4850 1700 2    50   BiDi ~ 0
+PD8
+Wire Wire Line
+	1350 2600 2400 2600
+Wire Wire Line
+	1350 4900 2400 4900
+Wire Wire Line
+	3800 1700 4850 1700
+Text HLabel 1350 5000 0    50   BiDi ~ 0
+PC9
+Text HLabel 1350 2700 0    50   BiDi ~ 0
+PB1
+Text HLabel 4850 1800 2    50   BiDi ~ 0
+PD9
+Wire Wire Line
+	1350 2700 2400 2700
+Wire Wire Line
+	1350 5000 2400 5000
+Wire Wire Line
+	3800 1800 4850 1800
+Text HLabel 4850 1900 2    50   Output ~ 0
+PD10
+Wire Wire Line
+	3800 1900 4850 1900
+Text Notes 7700 2350 2    50   ~ 0
+TIM1_CH3
+Text Notes 7700 2450 2    50   ~ 0
+TIM1_CH4
+Text Notes 8300 2350 0    50   ~ 0
+TIM1_CH3N
+Text Label 9250 2350 2    50   ~ 0
+PE12
+Text Label 6750 2350 0    50   ~ 0
+PE13
+Text Label 6750 2450 0    50   ~ 0
+PE14
+Wire Wire Line
+	8250 2350 9250 2350
+Wire Wire Line
+	6750 2350 7750 2350
+Wire Wire Line
+	7750 2450 6750 2450
+Text Notes 7700 2550 2    50   ~ 0
+TIM4_CH1
+Text Notes 7700 2650 2    50   ~ 0
+TIM4_CH2
+Text Notes 8300 2550 0    50   ~ 0
+TIM4_CH3
+Text Notes 8300 2650 0    50   ~ 0
+TIM4_CH4
+Text Label 6750 2550 0    50   ~ 0
+PD12
+Text Label 6750 2650 0    50   ~ 0
+PD13
+Text Label 9250 2550 2    50   ~ 0
+PD14
+Text Label 9250 2650 2    50   ~ 0
+PD15
+Wire Wire Line
+	6750 2550 7750 2550
+Wire Wire Line
+	7750 2650 6750 2650
+Wire Wire Line
+	9250 2550 8250 2550
+Wire Wire Line
+	8250 2650 9250 2650
+Text Notes 8300 1150 0    50   ~ 0
+USART2_TX
+Text Notes 8300 1250 0    50   ~ 0
+USART2_RX
+Text Label 9250 1150 2    50   ~ 0
+PD5
+Text Label 9250 1250 2    50   ~ 0
+PD6
+Wire Wire Line
+	8250 1150 9250 1150
+Wire Wire Line
+	9250 1250 8250 1250
+Text Notes 7700 1150 2    50   ~ 0
+USART1_TX
+Text Notes 7700 1250 2    50   ~ 0
+USART1_RX
+Text Label 6750 1150 0    50   ~ 0
+PA9
+Wire Wire Line
+	6750 1150 7750 1150
+Text Label 6750 1250 0    50   ~ 0
+PA10
+Wire Wire Line
+	7750 1250 6750 1250
+Text Notes 7700 1850 2    50   ~ 0
+I2C_SCL
+Text Notes 7700 1950 2    50   ~ 0
+I2C_SCA
+Text Label 6750 1850 0    50   ~ 0
+PB6
+Text Label 6750 1950 0    50   ~ 0
+PB7
+Wire Wire Line
+	6750 1850 7750 1850
+Wire Wire Line
+	7750 1950 6750 1950
+Text Notes 7700 1450 2    50   ~ 0
+I2S2_WS
+Text Notes 7700 1550 2    50   ~ 0
+I2S2_CK
+Text Label 6750 1450 0    50   ~ 0
+PB12
+Text Label 6750 1550 0    50   ~ 0
+PB13
+Wire Wire Line
+	7750 1450 6750 1450
+Wire Wire Line
+	6750 1550 7750 1550
+Text Notes 7700 1650 2    50   ~ 0
+I2S2_SD
+Text Label 6750 1650 0    50   ~ 0
+PB15
+Wire Wire Line
+	6750 1650 7750 1650
+Text Notes 7700 1750 2    50   ~ 0
+I2S2_MCK
+Text Label 6750 1750 0    50   ~ 0
+PC6
+Wire Wire Line
+	6750 1750 7750 1750
+Text Notes 8300 1450 0    50   ~ 0
+SPI3_SCK
+Text Notes 8300 1550 0    50   ~ 0
+SPI3_MISO
+Text Notes 8300 1650 0    50   ~ 0
+SPI3_MOSI
+Text Label 9250 1450 2    50   ~ 0
+PC10
+Text Label 9250 1550 2    50   ~ 0
+PC11
+Text Label 9250 1650 2    50   ~ 0
+PC12
+Wire Wire Line
+	9250 1450 8250 1450
+Wire Wire Line
+	8250 1550 9250 1550
+Wire Wire Line
+	9250 1650 8250 1650
+Text Notes 8300 1750 0    50   ~ 0
+ADC_IN2
+Text Label 9250 1750 2    50   ~ 0
+PA2
+Wire Wire Line
+	8250 1750 9250 1750
+Text Notes 8300 1850 0    50   ~ 0
+ADC_IN14
+Text Notes 8300 1950 0    50   ~ 0
+ADC_IN15
+Text Label 9250 1850 2    50   ~ 0
+PC4
+Text Label 9250 1950 2    50   ~ 0
+PC5
+Wire Wire Line
+	9250 1850 8250 1850
+Wire Wire Line
+	8250 1950 9250 1950
+Text Label 8300 4500 0    50   ~ 0
+USB+
+Text Label 8300 4400 0    50   ~ 0
+USB-
+$Comp
+L USER_Connectors_Generic:Conn_01x06 J1
+U 1 1 61516D11
+P 6900 4500
+AR Path="/6037B2CC/61516D11" Ref="J1"  Part="1" 
+AR Path="/61516D11" Ref="J?"  Part="1" 
+F 0 "J1" H 6900 4800 50  0000 C CNN
+F 1 "Conn_01x05_Shielded" H 6822 4824 50  0001 C CNN
+F 2 "USER_Connector_USB:USB_Mini-B_Wuerth_65100516121_Horizontal" H 6900 4500 50  0001 C CNN
+F 3 "~" H 6900 4500 50  0001 C CNN
+F 4 "USB B Mini" H 7200 4500 50  0000 C CNN "Label"
+F 5 "1.47" H 6900 4500 50  0001 C CNN "Cost"
+F 6 "USB Micro B Socket, RATH" H 6900 4500 50  0001 C CNN "Description"
+F 7 "Wurth" H 6900 4500 50  0001 C CNN "Manufacturer"
+F 8 "629105150521" H 6900 4500 50  0001 C CNN "Manufacturer Part Number"
+F 9 "Digikey" H 6900 4500 50  0001 C CNN "Supplier"
+F 10 "732-5960-1-ND" H 6900 4500 50  0001 C CNN "Supplier Part Number"
+	1    6900 4500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L USER_Power_Symbols:GND #PWR08
+U 1 1 61516D17
+P 7150 4950
+AR Path="/6037B2CC/61516D17" Ref="#PWR08"  Part="1" 
+AR Path="/61516D17" Ref="#PWR?"  Part="1" 
+F 0 "#PWR08" H 7150 4700 50  0001 C CNN
+F 1 "GND" H 7155 4777 50  0000 C CNN
+F 2 "" H 7150 4950 50  0001 C CNN
+F 3 "" H 7150 4950 50  0001 C CNN
+	1    7150 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Diodes:D_Zener D1
+U 1 1 61516D22
+P 7650 4700
+AR Path="/6037B2CC/61516D22" Ref="D1"  Part="1" 
+AR Path="/61516D22" Ref="D?"  Part="1" 
+F 0 "D1" V 7600 4500 50  0000 L CNN
+F 1 "26V, 9.5A" V 7700 4250 50  0000 L CNN
+F 2 "USER_Diode_SMD:D_SMA" H 7650 4700 50  0001 C CNN
+F 3 "~" H 7650 4700 50  0001 C CNN
+F 4 "26V Reverse Standoff, 9.5A, 42.1V Clamp, Unidirectional TVS Diode, SMA" H 7650 4700 50  0001 C CNN "Description"
+F 5 "0.27" H 7650 4700 50  0001 C CNN "Cost"
+F 6 "Littlefuse" H 7650 4700 50  0001 C CNN "Manufacturer"
+F 7 "SMAJ26A" H 7650 4700 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 7650 4700 50  0001 C CNN "Supplier"
+F 9 "SMAJ26ALFCT-ND" H 7650 4700 50  0001 C CNN "Supplier Part Number"
+F 10 "C134975" H 7650 4700 50  0001 C CNN "LCSC Part Number"
+	1    7650 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7650 4900 7650 4850
+Wire Wire Line
+	7650 4550 7650 4300
+Connection ~ 7650 4300
+$Comp
+L USER_Power_Symbols:+12V0 #PWR013
+U 1 1 61516D2D
+P 7900 3750
+AR Path="/6037B2CC/61516D2D" Ref="#PWR013"  Part="1" 
+AR Path="/61516D2D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR013" H 7900 3600 50  0001 C CNN
+F 1 "+12V0" H 7915 3923 50  0000 C CNN
+F 2 "" H 7900 3750 50  0001 C CNN
+F 3 "" H 7900 3750 50  0001 C CNN
+	1    7900 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Resistor R4
+U 1 1 61516D39
+P 8750 4400
+AR Path="/6037B2CC/61516D39" Ref="R4"  Part="1" 
+AR Path="/61516D39" Ref="R?"  Part="1" 
+F 0 "R4" V 8650 4300 50  0000 C CNN
+F 1 "27R" V 8700 4600 50  0000 C CNN
+F 2 "USER_Resistor_SMD:R_0603_1608Metric" V 8680 4400 50  0001 C CNN
+F 3 "~" H 8750 4400 50  0001 C CNN
+F 4 "0.07" H 8750 4400 50  0001 C CNN "Cost"
+F 5 "27R, 1%, 0.1W, 0603" H 8750 4400 50  0001 C CNN "Description"
+F 6 "Yageo" H 8750 4400 50  0001 C CNN "Manufacturer"
+F 7 "RC0603FR-0727RL" H 8750 4400 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 8750 4400 50  0001 C CNN "Supplier"
+F 9 "311-27.0HRCT-ND" H 8750 4400 50  0001 C CNN "Supplier Part Number"
+F 10 "C25190" H 8750 4400 50  0001 C CNN "LCSC Part Number"
+	1    8750 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L USER_Passives:Resistor R5
+U 1 1 61516D3F
+P 8750 4500
+AR Path="/6037B2CC/61516D3F" Ref="R5"  Part="1" 
+AR Path="/61516D3F" Ref="R?"  Part="1" 
+F 0 "R5" V 8650 4600 50  0000 C CNN
+F 1 "27R" V 8700 4300 50  0000 C CNN
+F 2 "USER_Resistor_SMD:R_0603_1608Metric" V 8680 4500 50  0001 C CNN
+F 3 "~" H 8750 4500 50  0001 C CNN
+F 4 "0.07" H 8750 4500 50  0001 C CNN "Cost"
+F 5 "27R, 1%, 0.1W, 0603" H 8750 4500 50  0001 C CNN "Description"
+F 6 "Yageo" H 8750 4500 50  0001 C CNN "Manufacturer"
+F 7 "RC0603FR-0727RL" H 8750 4500 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 8750 4500 50  0001 C CNN "Supplier"
+F 9 "311-27.0HRCT-ND" H 8750 4500 50  0001 C CNN "Supplier Part Number"
+F 10 "C25190" H 8750 4500 50  0001 C CNN "LCSC Part Number"
+	1    8750 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L USER_Passives:Capacitor C23
+U 1 1 61516D45
+P 9150 4750
+AR Path="/6037B2CC/61516D45" Ref="C23"  Part="1" 
+AR Path="/61516D45" Ref="C?"  Part="1" 
+F 0 "C23" H 9036 4704 50  0000 R CNN
+F 1 "33pF" H 9036 4795 50  0000 R CNN
+F 2 "USER_Capacitor_SMD:C_0603_1608Metric" H 9188 4600 50  0001 C CNN
+F 3 "~" H 9150 4750 50  0001 C CNN
+F 4 "0.07" H 9150 4750 50  0001 C CNN "Cost"
+F 5 "33pF, 50V, C0G-NP0, 0603" H 9150 4750 50  0001 C CNN "Description"
+F 6 "Samsung" H 9150 4750 50  0001 C CNN "Manufacturer"
+F 7 "CL10C330JB8NNNC" H 9150 4750 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 9150 4750 50  0001 C CNN "Supplier"
+F 9 "1276-1070-1-ND" H 9150 4750 50  0001 C CNN "Supplier Part Number"
+F 10 "C1663" H 9150 4750 50  0001 C CNN "LCSC Part Number"
+	1    9150 4750
+	1    0    0    1   
+$EndComp
+$Comp
+L USER_Passives:Capacitor C24
+U 1 1 61516D4B
+P 9400 4750
+AR Path="/6037B2CC/61516D4B" Ref="C24"  Part="1" 
+AR Path="/61516D4B" Ref="C?"  Part="1" 
+F 0 "C24" H 9285 4704 50  0000 R CNN
+F 1 "33pF" H 9285 4795 50  0000 R CNN
+F 2 "USER_Capacitor_SMD:C_0603_1608Metric" H 9438 4600 50  0001 C CNN
+F 3 "~" H 9400 4750 50  0001 C CNN
+F 4 "0.07" H 9400 4750 50  0001 C CNN "Cost"
+F 5 "33pF, 50V, C0G-NP0, 0603" H 9400 4750 50  0001 C CNN "Description"
+F 6 "Samsung" H 9400 4750 50  0001 C CNN "Manufacturer"
+F 7 "CL10C330JB8NNNC" H 9400 4750 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 9400 4750 50  0001 C CNN "Supplier"
+F 9 "1276-1070-1-ND" H 9400 4750 50  0001 C CNN "Supplier Part Number"
+F 10 "C1663" H 9400 4750 50  0001 C CNN "LCSC Part Number"
+	1    9400 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L USER_Power_Symbols:GND #PWR016
+U 1 1 61516D51
+P 9150 5000
+AR Path="/6037B2CC/61516D51" Ref="#PWR016"  Part="1" 
+AR Path="/61516D51" Ref="#PWR?"  Part="1" 
+F 0 "#PWR016" H 9150 4750 50  0001 C CNN
+F 1 "GND" H 9155 4827 50  0000 C CNN
+F 2 "" H 9150 5000 50  0001 C CNN
+F 3 "" H 9150 5000 50  0001 C CNN
+	1    9150 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 5000 9150 4950
+Wire Wire Line
+	9150 4950 9400 4950
+Wire Wire Line
+	9400 4950 9400 4900
+Connection ~ 9150 4950
+Wire Wire Line
+	9150 4950 9150 4900
+Wire Wire Line
+	9150 4600 9150 4500
+Wire Wire Line
+	9400 4400 9400 4600
+Wire Wire Line
+	8900 4500 9150 4500
+Wire Wire Line
+	8900 4400 9150 4400
+Wire Wire Line
+	7650 4300 7900 4300
+$Comp
+L USER_Passives:Capacitor C22
+U 1 1 61516D61
+P 7900 4700
+AR Path="/6037B2CC/61516D61" Ref="C22"  Part="1" 
+AR Path="/61516D61" Ref="C?"  Part="1" 
+F 0 "C22" H 7785 4654 50  0000 R CNN
+F 1 "100nF" H 7785 4745 50  0000 R CNN
+F 2 "USER_Capacitor_SMD:C_0603_1608Metric" H 7938 4550 50  0001 C CNN
+F 3 "~" H 7900 4700 50  0001 C CNN
+F 4 "0.07" H 7900 4700 50  0001 C CNN "Cost"
+F 5 "100nF, 50V, X7R, 0603" H 7900 4700 50  0001 C CNN "Description"
+F 6 "Samsung" H 7900 4700 50  0001 C CNN "Manufacturer"
+F 7 "CL10B104KB8NNNL" H 7900 4700 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 7900 4700 50  0001 C CNN "Supplier"
+F 9 "1276-CL10B104KB8NNNLCT-ND" H 7900 4700 50  0001 C CNN "Supplier Part Number"
+F 10 "C24452" H 7900 4700 50  0001 C CNN "LCSC Part Number"
+	1    7900 4700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7900 4850 7900 4900
+Wire Wire Line
+	7650 4900 7900 4900
+Wire Wire Line
+	7900 4550 7900 4300
+$Comp
+L USER_Passives:Ferrite_Bead FB2
+U 1 1 61516D6C
+P 7900 4100
+AR Path="/6037B2CC/61516D6C" Ref="FB2"  Part="1" 
+AR Path="/61516D6C" Ref="FB?"  Part="1" 
+F 0 "FB2" H 7958 4146 50  0000 L CNN
+F 1 "600R" H 7958 4055 50  0000 L CNN
+F 2 "USER_Inductor_SMD:L_1206_3216Metric" V 7780 4150 50  0001 C CNN
+F 3 "~" H 7850 4150 50  0001 C CNN
+F 4 "0.16" H 7900 4100 50  0001 C CNN "Cost"
+F 5 "Ferrite Bead, 600R@100MHz, 70mR, 2.5A, 1206" H 7900 4100 50  0001 C CNN "Description"
+F 6 "Wurth" H 7900 4100 50  0001 C CNN "Manufacturer"
+F 7 "742792118" H 7900 4100 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 7900 4100 50  0001 C CNN "Supplier"
+F 9 "732-4653-1-ND" H 7900 4100 50  0001 C CNN "Supplier Part Number"
+F 10 "C74090" H 7900 4100 50  0001 C CNN "LCSC Part Number"
+	1    7900 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 4250 7900 4300
+Connection ~ 7900 4300
+Connection ~ 7900 3900
+Wire Wire Line
+	7900 3900 7900 3950
+Wire Wire Line
+	7900 3750 7900 3800
+$Comp
+L USER_Power_Symbols:PWR_FLAG #FLG01
+U 1 1 61516D77
+P 7950 3900
+AR Path="/6037B2CC/61516D77" Ref="#FLG01"  Part="1" 
+AR Path="/61516D77" Ref="#FLG?"  Part="1" 
+F 0 "#FLG01" H 7950 3975 50  0001 C CNN
+F 1 "PWR_FLAG" V 7950 4028 50  0001 L CNN
+F 2 "" H 7950 3900 50  0001 C CNN
+F 3 "~" H 7950 3900 50  0001 C CNN
+	1    7950 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7950 3900 7900 3900
+$Comp
+L USER_Passives:Capacitor C21
+U 1 1 61516D7E
+P 7550 3800
+AR Path="/6037B2CC/61516D7E" Ref="C21"  Part="1" 
+AR Path="/61516D7E" Ref="C?"  Part="1" 
+F 0 "C21" V 7802 3800 50  0000 C CNN
+F 1 "10uF" V 7711 3800 50  0000 C CNN
+F 2 "USER_Capacitor_SMD:C_1210_3225Metric" H 7588 3650 50  0001 C CNN
+F 3 "~" H 7550 3800 50  0001 C CNN
+F 4 "0.47" H 7550 3800 50  0001 C CNN "Cost"
+F 5 "10uF, 35V, X7R, 1210" H 7550 3800 50  0001 C CNN "Description"
+F 6 "Samsung" H 7550 3800 50  0001 C CNN "Manufacturer"
+F 7 "CL32B106KBJNNWE" H 7550 3800 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 7550 3800 50  0001 C CNN "Supplier"
+F 9 "1276-3388-1-ND" H 7550 3800 50  0001 C CNN "Supplier Part Number"
+F 10 "C39232" H 7550 3800 50  0001 C CNN "LCSC Part Number"
+	1    7550 3800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7700 3800 7900 3800
+Connection ~ 7900 3800
+Wire Wire Line
+	7900 3800 7900 3900
+$Comp
+L USER_Power_Symbols:GND #PWR011
+U 1 1 61516D87
+P 7150 3850
+AR Path="/6037B2CC/61516D87" Ref="#PWR011"  Part="1" 
+AR Path="/61516D87" Ref="#PWR?"  Part="1" 
+F 0 "#PWR011" H 7150 3600 50  0001 C CNN
+F 1 "GND" H 7155 3677 50  0000 C CNN
+F 2 "" H 7150 3850 50  0001 C CNN
+F 3 "" H 7150 3850 50  0001 C CNN
+	1    7150 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3800 7150 3800
+Wire Wire Line
+	7150 3800 7150 3850
+$Comp
+L USER_Passives:Resistor R6
+U 1 1 61516D8F
+P 9150 4150
+AR Path="/6037B2CC/61516D8F" Ref="R6"  Part="1" 
+AR Path="/61516D8F" Ref="R?"  Part="1" 
+F 0 "R6" H 9220 4196 50  0000 L CNN
+F 1 "1k5" H 9220 4105 50  0000 L CNN
+F 2 "USER_Resistor_SMD:R_0603_1608Metric" V 9080 4150 50  0001 C CNN
+F 3 "~" H 9150 4150 50  0001 C CNN
+F 4 "0.07" H 9150 4150 50  0001 C CNN "Cost"
+F 5 "1.5k, 1%, 0.1W, 0603" H 9150 4150 50  0001 C CNN "Description"
+F 6 "Yageo" H 9150 4150 50  0001 C CNN "Manufacturer"
+F 7 "RC0603FR-071K5L" H 9150 4150 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 9150 4150 50  0001 C CNN "Supplier"
+F 9 "311-1.50KHRCT-ND" H 9150 4150 50  0001 C CNN "Supplier Part Number"
+F 10 "C22843" H 9150 4150 50  0001 C CNN "LCSC Part Number"
+	1    9150 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 4300 9150 4400
+Connection ~ 9150 4400
+Wire Wire Line
+	9150 4400 9400 4400
+$Comp
+L USER_Power_Symbols:+3V3 #PWR015
+U 1 1 61516D98
+P 9150 3950
+AR Path="/6037B2CC/61516D98" Ref="#PWR015"  Part="1" 
+AR Path="/61516D98" Ref="#PWR?"  Part="1" 
+F 0 "#PWR015" H 9150 3800 50  0001 C CNN
+F 1 "+3V3" H 9165 4123 50  0000 C CNN
+F 2 "" H 9150 3950 50  0001 C CNN
+F 3 "" H 9150 3950 50  0001 C CNN
+	1    9150 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 3950 9150 4000
+Text Notes 6800 4650 2    50   ~ 0
+Enclosure Connection
+Wire Wire Line
+	7100 4500 8600 4500
+Wire Wire Line
+	7100 4400 8600 4400
+Connection ~ 9150 4500
+Wire Wire Line
+	9900 4400 9400 4400
+Connection ~ 9400 4400
+Text Label 1400 2100 0    50   ~ 0
+STM_USB+
+Text Label 1400 2000 0    50   ~ 0
+STM_USB-
+Wire Wire Line
+	1400 2000 2400 2000
+Wire Wire Line
+	2400 2100 1400 2100
+Text Label 9900 4400 2    50   ~ 0
+STM_USB-
+Text Label 9900 4500 2    50   ~ 0
+STM_USB+
+Wire Wire Line
+	9150 4500 9900 4500
+Wire Wire Line
+	6550 1350 7750 1350
+Wire Wire Line
+	9450 1350 8250 1350
+Wire Wire Line
+	9450 2050 8250 2050
+Wire Wire Line
+	6550 2050 7750 2050
+$Comp
+L USER_Power_Symbols:GND #PWR07
+U 1 1 61852CFC
+P 6550 3100
+F 0 "#PWR07" H 6550 2850 50  0001 C CNN
+F 1 "GND" H 6555 2927 50  0000 C CNN
+F 2 "" H 6550 3100 50  0001 C CNN
+F 3 "" H 6550 3100 50  0001 C CNN
+	1    6550 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Power_Symbols:GND #PWR018
+U 1 1 6186E57C
+P 9450 3100
+F 0 "#PWR018" H 9450 2850 50  0001 C CNN
+F 1 "GND" H 9455 2927 50  0000 C CNN
+F 2 "" H 9450 3100 50  0001 C CNN
+F 3 "" H 9450 3100 50  0001 C CNN
+	1    9450 3100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 2750 8250 2750
+Wire Wire Line
+	9450 1350 9450 2050
+Connection ~ 9450 2050
+Wire Wire Line
+	9450 2050 9450 2750
+Wire Wire Line
+	6550 1350 6550 2050
+Connection ~ 6550 2050
+Wire Wire Line
+	7750 1050 6550 1050
+Wire Wire Line
+	6550 1050 6550 1000
+Wire Wire Line
+	8250 1050 9450 1050
+Wire Wire Line
+	9450 1050 9450 1000
+Wire Wire Line
+	8250 2850 9650 2850
+$Comp
+L USER_Power_Symbols:+12V0 #PWR019
+U 1 1 619FB6BD
+P 9650 2800
+AR Path="/6037B2CC/619FB6BD" Ref="#PWR019"  Part="1" 
+AR Path="/619FB6BD" Ref="#PWR?"  Part="1" 
+F 0 "#PWR019" H 9650 2650 50  0001 C CNN
+F 1 "+12V0" H 9665 2973 50  0000 C CNN
+F 2 "" H 9650 2800 50  0001 C CNN
+F 3 "" H 9650 2800 50  0001 C CNN
+	1    9650 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Power_Symbols:+3V3 #PWR017
+U 1 1 619FBBBD
+P 9450 1000
+AR Path="/6037B2CC/619FBBBD" Ref="#PWR017"  Part="1" 
+AR Path="/619FBBBD" Ref="#PWR?"  Part="1" 
+F 0 "#PWR017" H 9450 850 50  0001 C CNN
+F 1 "+3V3" H 9465 1173 50  0000 C CNN
+F 2 "" H 9450 1000 50  0001 C CNN
+F 3 "" H 9450 1000 50  0001 C CNN
+	1    9450 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Power_Symbols:+3V3 #PWR06
+U 1 1 619FBFF6
+P 6550 1000
+AR Path="/6037B2CC/619FBFF6" Ref="#PWR06"  Part="1" 
+AR Path="/619FBFF6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR06" H 6550 850 50  0001 C CNN
+F 1 "+3V3" H 6565 1173 50  0000 C CNN
+F 2 "" H 6550 1000 50  0001 C CNN
+F 3 "" H 6550 1000 50  0001 C CNN
+	1    6550 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 2950 9650 2950
+$Comp
+L USER_Connectors_Generic:Conn_02x20_Odd_Even J2
+U 1 1 60566EC7
+P 7950 1950
+F 0 "J2" H 8000 3050 50  0000 C CNN
+F 1 "SlimStack 0.8mm 2x20" H 8000 2950 50  0000 C CNN
+F 2 "USER_Connector_Molex:Molex_SlimStack_524654071_2x20_P0.8mm_Vertical" H 7950 1950 50  0001 C CNN
+F 3 "~" H 7950 1950 50  0001 C CNN
+F 4 "2.36" H 7950 1950 50  0001 C CNN "Cost"
+F 5 "Molex SlimStack 0.8mm Pitch, 40 Position, Male" H 7950 1950 50  0001 C CNN "Description"
+F 6 "Molex" H 7950 1950 50  0001 C CNN "Manufacturer"
+F 7 "0524654071" H 7950 1950 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 7950 1950 50  0001 C CNN "Supplier"
+F 9 "WM3795CT-ND" H 7950 1950 50  0001 C CNN "Supplier Part Number"
+	1    7950 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Capacitor C1
+U 1 1 605F392F
+P 900 7200
+F 0 "C1" V 850 7250 50  0000 L CNN
+F 1 "2u2F" V 950 7250 50  0000 L CNN
+F 2 "USER_Capacitor_SMD:C_0603_1608Metric" H 938 7050 50  0001 C CNN
+F 3 "~" H 900 7200 50  0001 C CNN
+F 4 "0.09" H 900 7200 50  0001 C CNN "Cost"
+F 5 "2.2uF, 10V, X7R, 0603" H 900 7200 50  0001 C CNN "Description"
+F 6 "Samsung" H 900 7200 50  0001 C CNN "Manufacturer"
+F 7 "CL10B225KP8NFNC" H 900 7200 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 900 7200 50  0001 C CNN "Supplier"
+F 9 "1276-2016-1-ND" H 900 7200 50  0001 C CNN "Supplier Part Number"
+F 10 "C23630" H 900 7200 50  0001 C CNN "LCSC Part Number"
+	1    900  7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  7350 900  7400
+Wire Wire Line
+	900  7400 1150 7400
+Connection ~ 900  7400
+Wire Wire Line
+	900  7400 900  7500
+Connection ~ 1150 7400
+Wire Wire Line
+	900  7050 900  6100
+Connection ~ 900  6100
+Wire Wire Line
+	900  6100 1150 6100
+Wire Wire Line
+	7100 4300 7650 4300
+Wire Wire Line
+	2400 1700 1400 1700
+Wire Wire Line
+	2400 2400 1400 2400
+$Comp
+L USER_Mechanical:MountingHole H2
+U 1 1 60646FC2
+P 10150 1200
+F 0 "H2" H 10250 1246 50  0000 L CNN
+F 1 "MountingHole" H 10250 1155 50  0000 L CNN
+F 2 "USER_Mounting_Wuerth:Mounting_Wuerth_WA-SMSI-M2_H4.5mm_9774045243" H 10150 1200 50  0001 C CNN
+F 3 "~" H 10150 1200 50  0001 C CNN
+F 4 "0.69" H 10150 1200 50  0001 C CNN "Cost"
+F 5 "Standoff M2 Steel 4.5mm" H 10150 1200 50  0001 C CNN "Description"
+F 6 "Wurth" H 10150 1200 50  0001 C CNN "Manufacturer"
+F 7 "9774045243R" H 10150 1200 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 10150 1200 50  0001 C CNN "Supplier"
+F 9 "732-7094-1-ND" H 10150 1200 50  0001 C CNN "Supplier Part Number"
+	1    10150 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Mechanical:MountingHole H1
+U 1 1 60647145
+P 10150 1000
+F 0 "H1" H 10250 1046 50  0000 L CNN
+F 1 "MountingHole" H 10250 955 50  0000 L CNN
+F 2 "USER_Mounting_Wuerth:Mounting_Wuerth_WA-SMSI-M2_H4.5mm_9774045243" H 10150 1000 50  0001 C CNN
+F 3 "~" H 10150 1000 50  0001 C CNN
+F 4 "0.69" H 10150 1000 50  0001 C CNN "Cost"
+F 5 "Standoff M2 Steel 4.5mm" H 10150 1000 50  0001 C CNN "Description"
+F 6 "Wurth" H 10150 1000 50  0001 C CNN "Manufacturer"
+F 7 "9774045243R" H 10150 1000 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 10150 1000 50  0001 C CNN "Supplier"
+F 9 "732-7094-1-ND" H 10150 1000 50  0001 C CNN "Supplier Part Number"
+	1    10150 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Power_Symbols:+12V0 #PWR05
+U 1 1 619FB30D
+P 6350 2800
+AR Path="/6037B2CC/619FB30D" Ref="#PWR05"  Part="1" 
+AR Path="/619FB30D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR05" H 6350 2650 50  0001 C CNN
+F 1 "+12V0" H 6365 2973 50  0000 C CNN
+F 2 "" H 6350 2800 50  0001 C CNN
+F 3 "" H 6350 2800 50  0001 C CNN
+	1    6350 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 2050 6550 2750
+Text Notes 7700 2150 2    50   ~ 0
+TIM1_CH1
+Text Notes 7700 2250 2    50   ~ 0
+TIM1_CH2
+Text Notes 8300 2150 0    50   ~ 0
+TIM1_CH1N
+Text Notes 8300 2250 0    50   ~ 0
+TIM1_CH2N
+Text Label 9250 2150 2    50   ~ 0
+PE8
+Text Label 6750 2150 0    50   ~ 0
+PE9
+Text Label 9250 2250 2    50   ~ 0
+PE10
+Text Label 6750 2250 0    50   ~ 0
+PE11
+Text Label 9250 2450 2    50   ~ 0
+PE15
+Wire Wire Line
+	8250 2150 9250 2150
+Wire Wire Line
+	6750 2150 7750 2150
+Wire Wire Line
+	8250 2250 9250 2250
+Wire Wire Line
+	7750 2250 6750 2250
+Wire Wire Line
+	9250 2450 8250 2450
+Wire Wire Line
+	6550 2750 7750 2750
+Wire Wire Line
+	7750 2850 6350 2850
+Wire Wire Line
+	6350 2950 7750 2950
+Connection ~ 6550 2750
+Wire Wire Line
+	6550 2750 6550 3100
+Wire Wire Line
+	6350 2800 6350 2850
+Connection ~ 9450 2750
+Wire Wire Line
+	9450 2750 9450 3100
+Wire Wire Line
+	9650 2800 9650 2850
+Connection ~ 9650 2850
+Wire Wire Line
+	9650 2850 9650 2950
+Connection ~ 6350 2850
+Wire Wire Line
+	6350 2850 6350 2950
+Wire Wire Line
+	900  6000 900  6100
+Wire Wire Line
+	2250 6100 2850 6100
+Wire Wire Line
+	2250 7400 2850 7400
+$Comp
+L USER_Power_Symbols:+3V3 #PWR014
+U 1 1 6091595C
+P 8000 6850
+F 0 "#PWR014" H 8000 6700 50  0001 C CNN
+F 1 "+3V3" H 8015 7023 50  0000 C CNN
+F 2 "" H 8000 6850 50  0001 C CNN
+F 3 "" H 8000 6850 50  0001 C CNN
+	1    8000 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 6850 8000 6900
+Wire Wire Line
+	8000 6900 7800 6900
+NoConn ~ 7100 4600
+Wire Wire Line
+	7650 4900 7150 4900
+Wire Wire Line
+	7150 4900 7150 4950
+Connection ~ 7650 4900
+Wire Wire Line
+	7150 4900 7150 4800
+Wire Wire Line
+	7150 4700 7100 4700
+Connection ~ 7150 4900
+Wire Wire Line
+	7100 4800 7150 4800
+Connection ~ 7150 4800
+Wire Wire Line
+	7150 4800 7150 4700
+$EndSCHEMATC

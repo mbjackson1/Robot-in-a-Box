@@ -1,0 +1,370 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title "Enclosure"
+Date "2021-03-29"
+Rev "vA"
+Comp ""
+Comment1 "Matthew Jackson"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 6900 4800 0    50   BiDi ~ 0
+ROBOT_USB+
+Text HLabel 6900 4700 0    50   BiDi ~ 0
+ROBOT_USB-
+$Comp
+L USER_Passives:Capacitor_Polarized C12
+U 1 1 6024E700
+P 6550 2600
+F 0 "C12" H 6700 2650 50  0000 L CNN
+F 1 "150uF" H 6700 2550 50  0000 L CNN
+F 2 "USER_Capacitor_SMD:CP_Elec_6.3x7.7" H 6588 2450 50  0001 C CNN
+F 3 "~" H 6550 2600 50  0001 C CNN
+F 4 "0.48" H 6550 2600 50  0001 C CNN "Cost"
+F 5 "150uF, 16V, Aluminium Can" H 6550 2600 50  0001 C CNN "Description"
+F 6 "Panasonic" H 6550 2600 50  0001 C CNN "Manufacturer"
+F 7 "EEE-FKC151XAP" H 6550 2600 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 6550 2600 50  0001 C CNN "Supplier"
+F 9 "PCE4401CT-ND" H 6550 2600 50  0001 C CNN "Supplier Part Number"
+	1    6550 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Ferrite_Bead FB?
+U 1 1 6024E712
+P 5900 2350
+AR Path="/601D52D2/6024E712" Ref="FB?"  Part="1" 
+AR Path="/601D54D0/6024E712" Ref="FB1"  Part="1" 
+F 0 "FB1" V 6000 2450 50  0000 L CNN
+F 1 "600R" V 6000 2150 50  0000 L CNN
+F 2 "USER_Inductor_SMD:L_1206_3216Metric" V 5780 2400 50  0001 C CNN
+F 3 "~" H 5850 2400 50  0001 C CNN
+F 4 "0.16" H 5900 2350 50  0001 C CNN "Cost"
+F 5 "Ferrite Bead, 600R@100MHz, 70mR, 2.5A, 1206" H 5900 2350 50  0001 C CNN "Description"
+F 6 "Wurth" H 5900 2350 50  0001 C CNN "Manufacturer"
+F 7 "742792118" H 5900 2350 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 5900 2350 50  0001 C CNN "Supplier"
+F 9 "732-4653-1-ND" H 5900 2350 50  0001 C CNN "Supplier Part Number"
+F 10 "C74090" H 5900 2350 50  0001 C CNN "LCSC Part Number"
+	1    5900 2350
+	0    1    -1   0   
+$EndComp
+Text HLabel 4250 3200 0    50   Input ~ 0
+ROBOT_PWR_EN
+$Comp
+L USER_Passives:Fuse_Resettable_PTC_Polyfuse F?
+U 1 1 6078E0F5
+P 5500 2350
+AR Path="/601D533F/6078E0F5" Ref="F?"  Part="1" 
+AR Path="/601D54D0/6078E0F5" Ref="F3"  Part="1" 
+F 0 "F3" V 5400 2350 50  0000 C CNN
+F 1 "2.5A" V 5600 2350 50  0000 C CNN
+F 2 "USER_Fuse:Fuse_1812_4532Metric" H 5550 2150 50  0001 L CNN
+F 3 "~" H 5500 2350 50  0001 C CNN
+F 4 "MF-MSMF250/16X-2" H 5500 2350 50  0001 C CNN "Manufacturer Part Number"
+F 5 "0.38" H 5500 2350 50  0001 C CNN "Cost"
+F 6 "PTC Resettable Fuse, 16V, 2.5A" H 5500 2350 50  0001 C CNN "Description"
+F 7 "Bourns" H 5500 2350 50  0001 C CNN "Manufacturer"
+F 8 "Digikey" H 5500 2350 50  0001 C CNN "Supplier"
+F 9 "MF-MSMF250/16X-2CT-ND" H 5500 2350 50  0001 C CNN "Supplier Part Number"
+	1    5500 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L USER_Passives:Capacitor C?
+U 1 1 6079A96C
+P 6300 2600
+AR Path="/601D52D2/6079A96C" Ref="C?"  Part="1" 
+AR Path="/601D54D0/6079A96C" Ref="C11"  Part="1" 
+F 0 "C11" H 6450 2650 50  0000 L CNN
+F 1 "100nF" H 6450 2550 50  0000 L CNN
+F 2 "USER_Capacitor_SMD:C_0603_1608Metric" H 6338 2450 50  0001 C CNN
+F 3 "~" H 6300 2600 50  0001 C CNN
+F 4 "0.07" H 6300 2600 50  0001 C CNN "Cost"
+F 5 "100nF, 50V, X7R, 0603" H 6300 2600 50  0001 C CNN "Description"
+F 6 "Samsung" H 6300 2600 50  0001 C CNN "Manufacturer"
+F 7 "CL10B104KB8NNNL" H 6300 2600 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 6300 2600 50  0001 C CNN "Supplier"
+F 9 "1276-CL10B104KB8NNNLCT-ND" H 6300 2600 50  0001 C CNN "Supplier Part Number"
+F 10 "C14663" H 6300 2600 50  0001 C CNN "LCSC Part Number"
+	1    6300 2600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 2750 6300 2800
+Connection ~ 6550 2800
+Wire Wire Line
+	6300 2800 6550 2800
+Wire Wire Line
+	6550 2800 6550 2750
+$Comp
+L USER_Power_Symbols:GND #PWR029
+U 1 1 6024E70B
+P 6550 2850
+F 0 "#PWR029" H 6550 2600 50  0001 C CNN
+F 1 "GND" H 6550 2700 50  0000 C CNN
+F 2 "" H 6550 2850 50  0001 C CNN
+F 3 "" H 6550 2850 50  0001 C CNN
+	1    6550 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 2850 6550 2800
+Wire Wire Line
+	5650 2350 5750 2350
+Wire Wire Line
+	6050 2350 6300 2350
+Wire Wire Line
+	6300 2350 6300 2450
+Wire Wire Line
+	6300 2350 6550 2350
+Wire Wire Line
+	6550 2350 6550 2450
+Connection ~ 6300 2350
+Wire Wire Line
+	7350 4600 8050 4600
+Text Label 7450 4200 0    50   ~ 0
+ROBOT_12V
+Wire Wire Line
+	5100 2350 5200 2350
+$Comp
+L USER_Passives:Resistor R17
+U 1 1 607AE056
+P 5200 2800
+F 0 "R17" V 5100 2800 50  0000 C CNN
+F 1 "3k3" V 5300 2800 50  0000 C CNN
+F 2 "USER_Resistor_SMD:R_0603_1608Metric" V 5130 2800 50  0001 C CNN
+F 3 "~" H 5200 2800 50  0001 C CNN
+F 4 "0.07" H 5200 2800 50  0001 C CNN "Cost"
+F 5 "3.3k, 1%, 0.1W, 0603" H 5200 2800 50  0001 C CNN "Description"
+F 6 "Yageo" H 5200 2800 50  0001 C CNN "Manufacturer"
+F 7 "RC0603FR-073K3L" H 5200 2800 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 5200 2800 50  0001 C CNN "Supplier"
+F 9 "311-3.30KHRCT-ND" H 5200 2800 50  0001 C CNN "Supplier Part Number"
+F 10 "C22978" H 5200 2800 50  0001 C CNN "LCSC Part Number"
+	1    5200 2800
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4900 2650 4900 2800
+Wire Wire Line
+	4900 2800 4350 2800
+Wire Wire Line
+	4350 2800 4350 2750
+$Comp
+L USER_FETs:Q_PMOS_GDSD Q1
+U 1 1 607B8E3F
+P 4900 2450
+F 0 "Q1" V 5300 2450 50  0000 C CNN
+F 1 "DMP6023LE" V 5200 2450 50  0000 C CNN
+F 2 "USER_Package_TO_SOT_SMD:SOT-223" H 5100 2550 50  0001 C CNN
+F 3 "~" H 4900 2450 50  0001 C CNN
+F 4 "DMP6023LE-13" H 4900 2450 50  0001 C CNN "Manufacturer Part Number"
+F 5 "0.58" H 4900 2450 50  0001 C CNN "Cost"
+F 6 "P-Channel MOSFET, 60V, 7A, SOT-223" H 4900 2450 50  0001 C CNN "Description"
+F 7 "Diodes Incorporated" H 4900 2450 50  0001 C CNN "Manufacturer"
+F 8 "Digikey" H 4900 2450 50  0001 C CNN "Supplier"
+F 9 "DMP6023LE-13DICT-ND" H 4900 2450 50  0001 C CNN "Supplier Part Number"
+F 10 "C154901" H 4900 2450 50  0001 C CNN "LCSC Part Number"
+	1    4900 2450
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5100 2250 5200 2250
+Wire Wire Line
+	5200 2250 5200 2350
+Connection ~ 5200 2350
+Wire Wire Line
+	5200 2350 5350 2350
+Wire Wire Line
+	4350 2350 4350 2450
+Wire Wire Line
+	4350 2350 4700 2350
+$Comp
+L USER_FETs:Q_NMOS_GSD Q2
+U 1 1 607BE24C
+P 5400 3200
+F 0 "Q2" H 5650 3250 50  0000 L CNN
+F 1 "2N7002" H 5650 3150 50  0000 L CNN
+F 2 "USER_Package_TO_SOT_SMD:SOT-23" H 5600 3300 50  0001 C CNN
+F 3 "~" H 5400 3200 50  0001 C CNN
+F 4 "0.11" H 5400 3200 50  0001 C CNN "Cost"
+F 5 "N-Channel MOSFET, 30V, 360mA, SOT23" H 5400 3200 50  0001 C CNN "Description"
+F 6 "Nexperia" H 5400 3200 50  0001 C CNN "Manufacturer"
+F 7 "2N7002P,235" H 5400 3200 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 5400 3200 50  0001 C CNN "Supplier"
+F 9 "1727-1865-1-ND" H 5400 3200 50  0001 C CNN "Supplier Part Number"
+F 10 "C65189" H 5400 3200 50  0001 C CNN "LCSC Part Number"
+	1    5400 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Power_Symbols:GND #PWR027
+U 1 1 607C106B
+P 5500 3450
+F 0 "#PWR027" H 5500 3200 50  0001 C CNN
+F 1 "GND" H 5500 3300 50  0000 C CNN
+F 2 "" H 5500 3450 50  0001 C CNN
+F 3 "" H 5500 3450 50  0001 C CNN
+	1    5500 3450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3450 5500 3400
+Wire Wire Line
+	5050 2800 4900 2800
+Connection ~ 4900 2800
+Wire Wire Line
+	5350 2800 5500 2800
+Wire Wire Line
+	5500 2800 5500 3000
+Wire Wire Line
+	4250 3200 5150 3200
+$Comp
+L USER_Passives:Resistor R16
+U 1 1 607CD37E
+P 5150 3400
+F 0 "R16" H 5000 3350 50  0000 C CNN
+F 1 "15k" H 5000 3450 50  0000 C CNN
+F 2 "USER_Resistor_SMD:R_0603_1608Metric" V 5080 3400 50  0001 C CNN
+F 3 "~" H 5150 3400 50  0001 C CNN
+F 4 "0.07" H 5150 3400 50  0001 C CNN "Cost"
+F 5 "15k, 1%, 0.1W, 0603" H 5150 3400 50  0001 C CNN "Description"
+F 6 "Yageo" H 5150 3400 50  0001 C CNN "Manufacturer"
+F 7 "RC0603FR-0715KL" H 5150 3400 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 5150 3400 50  0001 C CNN "Supplier"
+F 9 "311-15.0KHRCT-ND" H 5150 3400 50  0001 C CNN "Supplier Part Number"
+F 10 "C22809" H 5150 3400 50  0001 C CNN "LCSC Part Number"
+	1    5150 3400
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5150 3250 5150 3200
+Connection ~ 5150 3200
+Wire Wire Line
+	5150 3200 5200 3200
+$Comp
+L USER_Power_Symbols:GND #PWR026
+U 1 1 607D18D5
+P 5150 3600
+F 0 "#PWR026" H 5150 3350 50  0001 C CNN
+F 1 "GND" H 5150 3450 50  0000 C CNN
+F 2 "" H 5150 3600 50  0001 C CNN
+F 3 "" H 5150 3600 50  0001 C CNN
+	1    5150 3600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3600 5150 3550
+$Comp
+L USER_Power_Symbols:+12V0 #PWR025
+U 1 1 607D5233
+P 4350 2250
+F 0 "#PWR025" H 4350 2100 50  0001 C CNN
+F 1 "+12V0" H 4400 2450 50  0000 C CNN
+F 2 "" H 4350 2250 50  0001 C CNN
+F 3 "" H 4350 2250 50  0001 C CNN
+	1    4350 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 2250 4350 2350
+Connection ~ 4350 2350
+Wire Wire Line
+	6550 2350 7350 2350
+Connection ~ 6550 2350
+Wire Wire Line
+	7750 4700 6900 4700
+Wire Wire Line
+	7850 4800 6900 4800
+$Comp
+L USER_Passives:Resistor R15
+U 1 1 605DF205
+P 4350 2600
+F 0 "R15" H 4200 2550 50  0000 C CNN
+F 1 "12k" H 4200 2650 50  0000 C CNN
+F 2 "USER_Resistor_SMD:R_0603_1608Metric" V 4280 2600 50  0001 C CNN
+F 3 "~" H 4350 2600 50  0001 C CNN
+F 4 "0.07" H 4350 2600 50  0001 C CNN "Cost"
+F 5 "12k, 1%, 0.1W, 0603" H 4350 2600 50  0001 C CNN "Description"
+F 6 "Yageo" H 4350 2600 50  0001 C CNN "Manufacturer"
+F 7 "RC0603FR-0712KL" H 4350 2600 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 4350 2600 50  0001 C CNN "Supplier"
+F 9 "311-12.0KHRCT-ND" H 4350 2600 50  0001 C CNN "Supplier Part Number"
+F 10 "C22790" H 4350 2600 50  0001 C CNN "LCSC Part Number"
+	1    4350 2600
+	1    0    0    1   
+$EndComp
+$Comp
+L USER_Power_Symbols:GND #PWR?
+U 1 1 606FD970
+P 8000 5150
+AR Path="/601D52D2/606FD970" Ref="#PWR?"  Part="1" 
+AR Path="/601D54D0/606FD970" Ref="#PWR0101"  Part="1" 
+F 0 "#PWR0101" H 8000 4900 50  0001 C CNN
+F 1 "GND" H 8000 5000 50  0000 C CNN
+F 2 "" H 8000 5150 50  0001 C CNN
+F 3 "" H 8000 5150 50  0001 C CNN
+	1    8000 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Connectors_Generic:Conn_01x09 J?
+U 1 1 606FD97F
+P 8250 4600
+AR Path="/601D52D2/606FD97F" Ref="J?"  Part="1" 
+AR Path="/601D54D0/606FD97F" Ref="J5"  Part="1" 
+F 0 "J5" H 8330 4642 50  0000 L CNN
+F 1 "Dual USB Type A" H 8330 4551 50  0000 L CNN
+F 2 "USER_Connector_USB:USB_A_Wuerth_61400826021_Horizontal_Stacked" H 8250 4600 50  0001 C CNN
+F 3 "~" H 8250 4600 50  0001 C CNN
+F 4 "Stacked USB 2.0 Receptacle Connector 8 Position Through Hole, Right Angle" H 8250 4600 50  0001 C CNN "Description"
+F 5 "Wurth" H 8250 4600 50  0001 C CNN "Manufacturer"
+F 6 "61400826021" H 8250 4600 50  0001 C CNN "Manufacturer Part Number"
+F 7 "Digikey" H 8250 4600 50  0001 C CNN "Supplier"
+F 8 "732-2107-ND" H 8250 4600 50  0001 C CNN "Supplier Part Number"
+F 9 "1.41" H 8250 4600 50  0001 C CNN "Cost"
+	1    8250 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 4900 8000 4900
+Wire Wire Line
+	8000 4900 8000 5000
+Wire Wire Line
+	8000 5000 8050 5000
+Wire Wire Line
+	8000 5150 8000 5000
+Connection ~ 8000 5000
+Wire Wire Line
+	8000 4900 8000 4500
+Wire Wire Line
+	8000 4500 8050 4500
+Connection ~ 8000 4900
+Wire Wire Line
+	7350 2350 7350 4200
+Wire Wire Line
+	7850 4800 7850 4400
+Wire Wire Line
+	7850 4400 8050 4400
+Wire Wire Line
+	7850 4800 8050 4800
+Wire Wire Line
+	7750 4700 7750 4300
+Wire Wire Line
+	7750 4300 8050 4300
+Wire Wire Line
+	7750 4700 8050 4700
+Wire Wire Line
+	8050 4200 7350 4200
+Connection ~ 7350 4200
+Wire Wire Line
+	7350 4200 7350 4600
+Connection ~ 7750 4700
+Connection ~ 7850 4800
+$EndSCHEMATC

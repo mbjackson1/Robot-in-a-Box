@@ -1,0 +1,326 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "RGB LED"
+Date "2021-04-10"
+Rev "vA"
+Comp ""
+Comment1 "Matthew Jackson"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L USER_Misc:PCB_Text T1
+U 1 1 606D74F9
+P 9000 6650
+F 0 "T1" H 9000 6915 50  0000 C CNN
+F 1 "RGB LED vA" H 9000 6824 50  0000 C CNN
+F 2 "USER_PCB_Texts:PCB_Title_&_Version" H 9000 6650 50  0001 C CNN
+F 3 "" H 9000 6650 50  0001 C CNN
+	1    9000 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Misc:PCB_Text T2
+U 1 1 606D76A9
+P 9600 6650
+F 0 "T2" H 9600 6915 50  0000 C CNN
+F 1 "Board ID" H 9600 6824 50  0000 C CNN
+F 2 "USER_PCB_Texts:Board_Number" H 9600 6650 50  0001 C CNN
+F 3 "" H 9600 6650 50  0001 C CNN
+	1    9600 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Connectors_Generic:Conn_01x10 J1
+U 1 1 606E67B1
+P 5700 1850
+F 0 "J1" H 5780 1842 50  0000 L CNN
+F 1 "Conn_01x10" H 5780 1751 50  0000 L CNN
+F 2 "USER_Connector_Molex:Molex_SlimStack_533091070_2x05_P0.8mm_Right-Angle_Female" H 5700 1850 50  0001 C CNN
+F 3 "~" H 5700 1850 50  0001 C CNN
+F 4 "1.0428" H 5700 1850 50  0001 C CNN "Cost"
+F 5 "Molex" H 5700 1850 50  0001 C CNN "Manufacturer"
+F 6 "533091070" H 5700 1850 50  0001 C CNN "Manufacturer Part Number"
+F 7 "Molex SlimStack 10 Position, 0.8mm Pitch, Right Angle, Female Header" H 5700 1850 50  0001 C CNN "Part Description"
+F 8 "Farnell" H 5700 1850 50  0001 C CNN "Supplier"
+F 9 "3107451" H 5700 1850 50  0001 C CNN "Supplier Part Number"
+	1    5700 1850
+	1    0    0    1   
+$EndComp
+$Comp
+L USER_Power_Symbols:+12V0 #PWR0101
+U 1 1 606E8DBA
+P 5300 1300
+F 0 "#PWR0101" H 5300 1150 50  0001 C CNN
+F 1 "+12V0" H 5315 1473 50  0000 C CNN
+F 2 "" H 5300 1300 50  0001 C CNN
+F 3 "" H 5300 1300 50  0001 C CNN
+	1    5300 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 1300 5300 1350
+Wire Wire Line
+	5300 1350 5500 1350
+$Comp
+L USER_Power_Symbols:+3V3 #PWR0102
+U 1 1 606E97F1
+P 4950 1300
+F 0 "#PWR0102" H 4950 1150 50  0001 C CNN
+F 1 "+3V3" H 4965 1473 50  0000 C CNN
+F 2 "" H 4950 1300 50  0001 C CNN
+F 3 "" H 4950 1300 50  0001 C CNN
+	1    4950 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 1300 4950 2050
+Wire Wire Line
+	4950 2050 5500 2050
+Wire Wire Line
+	5500 1450 5400 1450
+Wire Wire Line
+	5400 1450 5400 1850
+Wire Wire Line
+	5500 1850 5400 1850
+Connection ~ 5400 1850
+Wire Wire Line
+	5400 1850 5400 2400
+$Comp
+L USER_Power_Symbols:GND #PWR0103
+U 1 1 606EADFD
+P 5400 2400
+F 0 "#PWR0103" H 5400 2150 50  0001 C CNN
+F 1 "GND" H 5405 2227 50  0000 C CNN
+F 2 "" H 5400 2400 50  0001 C CNN
+F 3 "" H 5400 2400 50  0001 C CNN
+	1    5400 2400
+	1    0    0    -1  
+$EndComp
+Text Label 4550 1550 0    50   ~ 0
+MOSI
+Text Label 4550 1650 0    50   ~ 0
+MISO
+Text Label 4550 1750 0    50   ~ 0
+SCK
+Text Label 4550 1950 0    50   ~ 0
+GPIO(CS)
+Text Label 4550 2150 0    50   ~ 0
+TIMER
+Text Label 4550 2250 0    50   ~ 0
+ANALOG
+Wire Wire Line
+	4550 1550 5500 1550
+Wire Wire Line
+	5500 1650 4550 1650
+Wire Wire Line
+	4550 1750 5500 1750
+Wire Wire Line
+	5500 1950 4550 1950
+Wire Wire Line
+	4550 2150 5500 2150
+Wire Wire Line
+	5500 2250 4550 2250
+$Comp
+L USER_LEDs:RGB_LED_Common_Anode_RAGB D1
+U 1 1 606F3E15
+P 5150 3700
+F 0 "D1" V 5196 3320 50  0000 R CNN
+F 1 "RGB_LED" V 5105 3320 50  0000 R CNN
+F 2 "USER_LED_SMD:LED_Kingbright_AAA3528ESGCT" H 5150 4200 50  0001 C CNN
+F 3 "" H 5150 3250 50  0001 C CNN
+F 4 "Kingbright" H 5150 3700 50  0001 C CNN "Manufacturer"
+F 5 "AAA3528LSEEZGKQBKS" H 5150 3700 50  0001 C CNN "Manufacturer Part Number"
+F 6 "0.77" H 5150 3700 50  0001 C CNN "Cost"
+F 7 "RGB LED Common Anode, 4-PLCC" H 5150 3700 50  0001 C CNN "Part Description"
+F 8 "Digikey" H 5150 3700 50  0001 C CNN "Supplier"
+F 9 "754-1967-1-ND" H 5150 3700 50  0001 C CNN "Supplier Part Number"
+	1    5150 3700
+	0    -1   -1   0   
+$EndComp
+Text Label 3850 4750 0    50   ~ 0
+GPIO(CS)
+Text Label 4450 5300 0    50   ~ 0
+TIMER
+Text Label 4800 5850 0    50   ~ 0
+ANALOG
+$Comp
+L USER_FETs:Q_NMOS_GSD Q1
+U 1 1 606F56FC
+P 4550 4750
+F 0 "Q1" H 4754 4796 50  0000 L CNN
+F 1 "FDV303N" H 4754 4705 50  0000 L CNN
+F 2 "USER_Package_TO_SOT_SMD:SOT-23" H 4750 4850 50  0001 C CNN
+F 3 "~" H 4550 4750 50  0001 C CNN
+F 4 "0.29" H 4550 4750 50  0001 C CNN "Cost"
+F 5 "ON Semiconductor" H 4550 4750 50  0001 C CNN "Manufacturer"
+F 6 "FDV303N" H 4550 4750 50  0001 C CNN "Manufacturer Part Number"
+F 7 "N-Channel MOSFET, 25V, 680mA, SOT23-3" H 4550 4750 50  0001 C CNN "Part Description"
+F 8 "Digikey" H 4550 4750 50  0001 C CNN "Supplier"
+F 9 "FDV303NCT-ND" H 4550 4750 50  0001 C CNN "Supplier Part Number"
+	1    4550 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_FETs:Q_NMOS_GSD Q2
+U 1 1 606F6D38
+P 5050 5300
+F 0 "Q2" H 5254 5346 50  0000 L CNN
+F 1 "FDV303N" H 5254 5255 50  0000 L CNN
+F 2 "USER_Package_TO_SOT_SMD:SOT-23" H 5250 5400 50  0001 C CNN
+F 3 "~" H 5050 5300 50  0001 C CNN
+F 4 "0.29" H 5050 5300 50  0001 C CNN "Cost"
+F 5 "ON Semiconductor" H 5050 5300 50  0001 C CNN "Manufacturer"
+F 6 "FDV303N" H 5050 5300 50  0001 C CNN "Manufacturer Part Number"
+F 7 "N-Channel MOSFET, 25V, 680mA, SOT23-3" H 5050 5300 50  0001 C CNN "Part Description"
+F 8 "Digikey" H 5050 5300 50  0001 C CNN "Supplier"
+F 9 "FDV303NCT-ND" H 5050 5300 50  0001 C CNN "Supplier Part Number"
+	1    5050 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_FETs:Q_NMOS_GSD Q3
+U 1 1 606F80B6
+P 5550 5850
+F 0 "Q3" H 5754 5896 50  0000 L CNN
+F 1 "FDV303N" H 5754 5805 50  0000 L CNN
+F 2 "USER_Package_TO_SOT_SMD:SOT-23" H 5750 5950 50  0001 C CNN
+F 3 "~" H 5550 5850 50  0001 C CNN
+F 4 "0.29" H 5550 5850 50  0001 C CNN "Cost"
+F 5 "ON Semiconductor" H 5550 5850 50  0001 C CNN "Manufacturer"
+F 6 "FDV303N" H 5550 5850 50  0001 C CNN "Manufacturer Part Number"
+F 7 "N-Channel MOSFET, 25V, 680mA, SOT23-3" H 5550 5850 50  0001 C CNN "Part Description"
+F 8 "Digikey" H 5550 5850 50  0001 C CNN "Supplier"
+F 9 "FDV303NCT-ND" H 5550 5850 50  0001 C CNN "Supplier Part Number"
+	1    5550 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 5850 4800 5850
+Wire Wire Line
+	4850 5300 4450 5300
+Wire Wire Line
+	4350 4750 3850 4750
+$Comp
+L USER_Power_Symbols:GND #PWR03
+U 1 1 606FC8C7
+P 5150 5500
+F 0 "#PWR03" H 5150 5250 50  0001 C CNN
+F 1 "GND" H 5155 5327 50  0000 C CNN
+F 2 "" H 5150 5500 50  0001 C CNN
+F 3 "" H 5150 5500 50  0001 C CNN
+	1    5150 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Power_Symbols:GND #PWR01
+U 1 1 606FCD0F
+P 4650 4950
+F 0 "#PWR01" H 4650 4700 50  0001 C CNN
+F 1 "GND" H 4655 4777 50  0000 C CNN
+F 2 "" H 4650 4950 50  0001 C CNN
+F 3 "" H 4650 4950 50  0001 C CNN
+	1    4650 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Power_Symbols:GND #PWR04
+U 1 1 606FCFF2
+P 5650 6050
+F 0 "#PWR04" H 5650 5800 50  0001 C CNN
+F 1 "GND" H 5655 5877 50  0000 C CNN
+F 2 "" H 5650 6050 50  0001 C CNN
+F 3 "" H 5650 6050 50  0001 C CNN
+	1    5650 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Resistor R2
+U 1 1 606FDB2E
+P 5150 4900
+F 0 "R2" H 5220 4946 50  0000 L CNN
+F 1 "22R" H 5220 4855 50  0000 L CNN
+F 2 "USER_Resistor_SMD:R_0603_1608Metric" V 5080 4900 50  0001 C CNN
+F 3 "~" H 5150 4900 50  0001 C CNN
+F 4 "0.07" H 5150 4900 50  0001 C CNN "Cost"
+F 5 "Yageo" H 5150 4900 50  0001 C CNN "Manufacturer"
+F 6 "RC0603FR-0722RL" H 5150 4900 50  0001 C CNN "Manufacturer Part Number"
+F 7 "22R, 1%, 0.1W, 0603" H 5150 4900 50  0001 C CNN "Part Description"
+F 8 "Digikey" H 5150 4900 50  0001 C CNN "Supplier"
+F 9 "311-22.0HRCT-ND" H 5150 4900 50  0001 C CNN "Supplier Part Number"
+	1    5150 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 5050 5150 5100
+$Comp
+L USER_Passives:Resistor R3
+U 1 1 606FFEF7
+P 5650 5450
+F 0 "R3" H 5720 5496 50  0000 L CNN
+F 1 "22R" H 5720 5405 50  0000 L CNN
+F 2 "USER_Resistor_SMD:R_0603_1608Metric" V 5580 5450 50  0001 C CNN
+F 3 "~" H 5650 5450 50  0001 C CNN
+F 4 "0.07" H 5650 5450 50  0001 C CNN "Cost"
+F 5 "Yageo" H 5650 5450 50  0001 C CNN "Manufacturer"
+F 6 "RC0603FR-0722RL" H 5650 5450 50  0001 C CNN "Manufacturer Part Number"
+F 7 "22R, 1%, 0.1W, 0603" H 5650 5450 50  0001 C CNN "Part Description"
+F 8 "Digikey" H 5650 5450 50  0001 C CNN "Supplier"
+F 9 "311-22.0HRCT-ND" H 5650 5450 50  0001 C CNN "Supplier Part Number"
+	1    5650 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 5600 5650 5650
+$Comp
+L USER_Passives:Resistor R1
+U 1 1 6070075B
+P 4650 4350
+F 0 "R1" H 4720 4396 50  0000 L CNN
+F 1 "47R" H 4720 4305 50  0000 L CNN
+F 2 "USER_Resistor_SMD:R_0603_1608Metric" V 4580 4350 50  0001 C CNN
+F 3 "~" H 4650 4350 50  0001 C CNN
+F 4 "0.07" H 4650 4350 50  0001 C CNN "Cost"
+F 5 "Yageo" H 4650 4350 50  0001 C CNN "Manufacturer"
+F 6 "RC0603FR-0747RL" H 4650 4350 50  0001 C CNN "Manufacturer Part Number"
+F 7 "47R, 1%, 0.1W, 0603" H 4650 4350 50  0001 C CNN "Part Description"
+F 8 "Digikey" H 4650 4350 50  0001 C CNN "Supplier"
+F 9 "311-47.0HRCT-ND" H 4650 4350 50  0001 C CNN "Supplier Part Number"
+	1    4650 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 4500 4650 4550
+Wire Wire Line
+	4950 4000 4950 4100
+Wire Wire Line
+	4950 4100 4650 4100
+Wire Wire Line
+	4650 4100 4650 4200
+Wire Wire Line
+	5150 4000 5150 4750
+Wire Wire Line
+	5650 5300 5650 4100
+Wire Wire Line
+	5650 4100 5350 4100
+Wire Wire Line
+	5350 4100 5350 4000
+$Comp
+L USER_Power_Symbols:+3V3 #PWR02
+U 1 1 60703BD8
+P 5150 3350
+F 0 "#PWR02" H 5150 3200 50  0001 C CNN
+F 1 "+3V3" H 5165 3523 50  0000 C CNN
+F 2 "" H 5150 3350 50  0001 C CNN
+F 3 "" H 5150 3350 50  0001 C CNN
+	1    5150 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3350 5150 3400
+$EndSCHEMATC

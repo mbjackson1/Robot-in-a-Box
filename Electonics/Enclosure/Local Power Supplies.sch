@@ -1,0 +1,1151 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title "Enclosure"
+Date "2021-03-29"
+Rev "vA"
+Comp ""
+Comment1 "Matthew Jackson"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	4150 2200 3950 2200
+Wire Wire Line
+	4600 2250 4600 2200
+Wire Wire Line
+	4600 2200 4450 2200
+Wire Wire Line
+	3950 2300 4000 2300
+Wire Wire Line
+	4000 2300 4000 2400
+$Comp
+L USER_Power_Symbols:GND #PWR033
+U 1 1 607D9B28
+P 4000 2400
+F 0 "#PWR033" H 4000 2150 50  0001 C CNN
+F 1 "GND" H 4000 2250 50  0000 C CNN
+F 2 "" H 4000 2400 50  0001 C CNN
+F 3 "" H 4000 2400 50  0001 C CNN
+	1    4000 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Power_Symbols:GND #PWR035
+U 1 1 607D9E2A
+P 4600 2650
+F 0 "#PWR035" H 4600 2400 50  0001 C CNN
+F 1 "GND" H 4600 2500 50  0000 C CNN
+F 2 "" H 4600 2650 50  0001 C CNN
+F 3 "" H 4600 2650 50  0001 C CNN
+	1    4600 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2650 4600 2600
+Wire Wire Line
+	5400 2550 5400 2600
+Wire Wire Line
+	5400 2600 4900 2600
+Wire Wire Line
+	4900 2600 4900 2550
+Wire Wire Line
+	4900 2600 4600 2600
+Connection ~ 4900 2600
+Connection ~ 4600 2600
+Wire Wire Line
+	4600 2600 4600 2550
+Wire Wire Line
+	4600 2200 4900 2200
+Wire Wire Line
+	4900 2200 4900 2250
+Connection ~ 4600 2200
+Wire Wire Line
+	4900 2200 5400 2200
+Wire Wire Line
+	5400 2200 5400 2250
+Connection ~ 4900 2200
+Wire Wire Line
+	8100 2550 8100 2600
+Wire Wire Line
+	8100 2200 8100 2250
+$Comp
+L USER_Power_Symbols:GND #PWR040
+U 1 1 607DD695
+P 8100 2950
+F 0 "#PWR040" H 8100 2700 50  0001 C CNN
+F 1 "GND" H 8100 2800 50  0000 C CNN
+F 2 "" H 8100 2950 50  0001 C CNN
+F 3 "" H 8100 2950 50  0001 C CNN
+	1    8100 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 2950 8100 2900
+Connection ~ 8100 2200
+Wire Wire Line
+	8600 2100 8600 2200
+$Comp
+L USER_Power_Symbols:+12V0 #PWR041
+U 1 1 607DE319
+P 8600 2100
+F 0 "#PWR041" H 8600 1950 50  0001 C CNN
+F 1 "+12V0" H 8615 2273 50  0000 C CNN
+F 2 "" H 8600 2100 50  0001 C CNN
+F 3 "" H 8600 2100 50  0001 C CNN
+	1    8600 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Power_Symbols:PWR_FLAG #FLG02
+U 1 1 607DE798
+P 8650 2200
+F 0 "#FLG02" H 8650 2275 50  0001 C CNN
+F 1 "PWR_FLAG" V 8650 2328 50  0000 L CNN
+F 2 "" H 8650 2200 50  0001 C CNN
+F 3 "~" H 8650 2200 50  0001 C CNN
+	1    8650 2200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8100 2200 8600 2200
+Connection ~ 8600 2200
+Wire Wire Line
+	8600 2200 8650 2200
+$Comp
+L USER_Power_Symbols:+12V0 #PWR031
+U 1 1 607DF46A
+P 2300 4500
+F 0 "#PWR031" H 2300 4350 50  0001 C CNN
+F 1 "+12V0" H 2315 4673 50  0000 C CNN
+F 2 "" H 2300 4500 50  0001 C CNN
+F 3 "" H 2300 4500 50  0001 C CNN
+	1    2300 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 4550 2300 4550
+Wire Wire Line
+	2300 4550 2300 4500
+Wire Wire Line
+	2900 4550 3050 4550
+Wire Wire Line
+	3050 4550 3050 4650
+Wire Wire Line
+	3050 4950 3050 5100
+Wire Wire Line
+	3050 5100 3550 5100
+Wire Wire Line
+	3550 5100 3550 4950
+Wire Wire Line
+	3050 4550 3550 4550
+Wire Wire Line
+	3550 4550 3550 4650
+Connection ~ 3050 4550
+$Comp
+L USER_Power_Symbols:GND #PWR032
+U 1 1 607E410A
+P 3550 5200
+F 0 "#PWR032" H 3550 4950 50  0001 C CNN
+F 1 "GND" H 3550 5050 50  0000 C CNN
+F 2 "" H 3550 5200 50  0001 C CNN
+F 3 "" H 3550 5200 50  0001 C CNN
+	1    3550 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 5200 3550 5100
+Connection ~ 3550 5100
+Wire Wire Line
+	3550 4550 4100 4550
+Connection ~ 3550 4550
+$Comp
+L USER_Power_Symbols:GND #PWR036
+U 1 1 607EC32F
+P 4700 5550
+F 0 "#PWR036" H 4700 5300 50  0001 C CNN
+F 1 "GND" H 4700 5400 50  0000 C CNN
+F 2 "" H 4700 5550 50  0001 C CNN
+F 3 "" H 4700 5550 50  0001 C CNN
+	1    4700 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 5550 4700 5500
+Wire Wire Line
+	4700 5500 4900 5500
+Wire Wire Line
+	4900 5500 4900 5450
+Connection ~ 4700 5500
+Wire Wire Line
+	4700 5500 4700 5450
+Wire Wire Line
+	5300 4850 5450 4850
+Wire Wire Line
+	6200 4850 6350 4850
+Wire Wire Line
+	6350 4850 6350 5000
+Wire Wire Line
+	6350 4850 6600 4850
+Wire Wire Line
+	6600 4850 6600 5000
+Connection ~ 6350 4850
+Connection ~ 4900 5500
+Wire Wire Line
+	6350 5300 6350 5500
+Wire Wire Line
+	6600 5300 6600 5500
+Connection ~ 6350 5500
+Wire Wire Line
+	6350 5500 6600 5500
+Wire Wire Line
+	5300 5150 5450 5150
+Wire Wire Line
+	5450 5150 5450 5700
+Connection ~ 5450 4850
+Wire Wire Line
+	5300 4550 5450 4550
+$Comp
+L USER_Power_Symbols:+5V0 #PWR043
+U 1 1 60819D7F
+P 9200 4750
+F 0 "#PWR043" H 9200 4600 50  0001 C CNN
+F 1 "+5V0" H 9215 4923 50  0000 C CNN
+F 2 "" H 9200 4750 50  0001 C CNN
+F 3 "" H 9200 4750 50  0001 C CNN
+	1    9200 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 4850 9050 4850
+Connection ~ 9200 4850
+Wire Wire Line
+	9200 4850 9200 4750
+Connection ~ 9050 4850
+Wire Wire Line
+	9300 4850 9200 4850
+$Comp
+L USER_Power_Symbols:PWR_FLAG #FLG03
+U 1 1 60817056
+P 9300 4850
+F 0 "#FLG03" H 9300 4925 50  0001 C CNN
+F 1 "PWR_FLAG" V 9300 4978 50  0000 L CNN
+F 2 "" H 9300 4850 50  0001 C CNN
+F 3 "~" H 9300 4850 50  0001 C CNN
+	1    9300 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9050 4850 9050 4900
+Wire Wire Line
+	9050 5600 9050 5550
+$Comp
+L USER_Power_Symbols:GND #PWR042
+U 1 1 608128CE
+P 9050 5600
+F 0 "#PWR042" H 9050 5350 50  0001 C CNN
+F 1 "GND" H 9050 5450 50  0000 C CNN
+F 2 "" H 9050 5600 50  0001 C CNN
+F 3 "" H 9050 5600 50  0001 C CNN
+	1    9050 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 5200 9050 5250
+Connection ~ 8200 5500
+Wire Wire Line
+	8200 5500 8200 5700
+Wire Wire Line
+	8200 5500 8200 5400
+Wire Wire Line
+	8150 5500 8200 5500
+Wire Wire Line
+	7600 5500 7850 5500
+Connection ~ 7600 5500
+Wire Wire Line
+	8200 4850 8200 4950
+Connection ~ 7600 4850
+Wire Wire Line
+	8200 4850 7600 4850
+Wire Wire Line
+	7600 5300 7600 5500
+Wire Wire Line
+	7600 4850 7600 5000
+Wire Wire Line
+	6600 5500 7100 5500
+Connection ~ 6600 5500
+Wire Wire Line
+	5450 5700 8200 5700
+Wire Wire Line
+	7100 5300 7100 5500
+Connection ~ 7100 5500
+Wire Wire Line
+	7100 5500 7600 5500
+Wire Wire Line
+	6600 4850 7100 4850
+Connection ~ 6600 4850
+Wire Wire Line
+	7100 5000 7100 4850
+Connection ~ 7100 4850
+Wire Wire Line
+	7100 4850 7600 4850
+$Comp
+L USER_Power_Symbols:GND #PWR034
+U 1 1 608350DA
+P 4100 5750
+F 0 "#PWR034" H 4100 5500 50  0001 C CNN
+F 1 "GND" H 4100 5600 50  0000 C CNN
+F 2 "" H 4100 5750 50  0001 C CNN
+F 3 "" H 4100 5750 50  0001 C CNN
+	1    4100 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 5750 4100 5700
+Wire Wire Line
+	4100 5350 4100 5150
+Wire Wire Line
+	4100 5150 4300 5150
+Wire Wire Line
+	3850 5650 3850 5700
+Wire Wire Line
+	3850 5700 4100 5700
+Connection ~ 4100 5700
+Wire Wire Line
+	4100 5700 4100 5650
+Wire Wire Line
+	3850 5350 3850 4950
+Wire Wire Line
+	3850 4950 4300 4950
+Wire Wire Line
+	4300 4750 4100 4750
+Wire Wire Line
+	4100 4750 4100 4550
+Connection ~ 4100 4550
+Wire Wire Line
+	4100 4550 4300 4550
+Wire Wire Line
+	8200 4850 8600 4850
+Connection ~ 8200 4850
+Wire Wire Line
+	8600 4950 8600 4850
+Connection ~ 8600 4850
+Wire Wire Line
+	8600 4850 9050 4850
+Wire Wire Line
+	8600 5250 8600 5400
+Wire Wire Line
+	8600 5400 8200 5400
+Connection ~ 8200 5400
+Wire Wire Line
+	8200 5400 8200 5250
+Wire Wire Line
+	5400 2200 6000 2200
+Connection ~ 5400 2200
+Wire Wire Line
+	6650 2200 6800 2200
+Wire Wire Line
+	6950 2100 6800 2100
+Wire Wire Line
+	6800 2650 6800 2600
+Wire Wire Line
+	6800 2600 6450 2600
+Wire Wire Line
+	6450 2600 6450 2500
+Wire Wire Line
+	6800 2600 7150 2600
+Wire Wire Line
+	7150 2600 7150 2500
+Connection ~ 6800 2600
+Wire Wire Line
+	6450 2600 6000 2600
+Wire Wire Line
+	6000 2600 6000 2550
+Connection ~ 6450 2600
+Wire Wire Line
+	6000 2250 6000 2200
+Connection ~ 6000 2200
+Wire Wire Line
+	6000 2200 6250 2200
+Wire Wire Line
+	5000 3750 5150 3750
+Wire Wire Line
+	5150 3750 5150 3550
+Wire Wire Line
+	5150 3550 5300 3550
+Wire Wire Line
+	5300 3550 5300 3600
+Wire Wire Line
+	5000 3850 5150 3850
+Wire Wire Line
+	5150 3850 5150 4050
+Wire Wire Line
+	5150 4050 5300 4050
+Wire Wire Line
+	5300 4050 5300 4000
+Wire Wire Line
+	5300 3550 6150 3550
+Connection ~ 5300 3550
+Wire Wire Line
+	6150 3550 6150 3650
+Wire Wire Line
+	6150 3950 6150 4050
+Wire Wire Line
+	6150 4050 5300 4050
+Connection ~ 5300 4050
+$Comp
+L USER_Power_Symbols:GND #PWR038
+U 1 1 604C54D5
+P 6150 4150
+F 0 "#PWR038" H 6150 3900 50  0001 C CNN
+F 1 "GND" H 6150 4000 50  0000 C CNN
+F 2 "" H 6150 4150 50  0001 C CNN
+F 3 "" H 6150 4150 50  0001 C CNN
+	1    6150 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 4150 6150 4050
+Connection ~ 6150 4050
+Wire Wire Line
+	6450 3250 6800 3250
+Wire Wire Line
+	6800 3250 6800 2950
+Wire Wire Line
+	6150 3450 6150 3550
+Connection ~ 6150 3550
+Wire Wire Line
+	5750 3150 5750 3250
+Wire Wire Line
+	5750 3250 5850 3250
+$Comp
+L USER_Power_Symbols:+3V3 #PWR037
+U 1 1 604E9A0C
+P 5750 2800
+F 0 "#PWR037" H 5750 2650 50  0001 C CNN
+F 1 "+3V3" H 5765 2973 50  0000 C CNN
+F 2 "" H 5750 2800 50  0001 C CNN
+F 3 "" H 5750 2800 50  0001 C CNN
+	1    5750 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2800 5750 2850
+Text HLabel 5150 3250 0    50   Output ~ 0
+~POWER_BUTTON_PRESSED
+Wire Wire Line
+	5750 3250 5150 3250
+Connection ~ 5750 3250
+Wire Wire Line
+	6800 3250 7300 3250
+Wire Wire Line
+	7300 3250 7300 3550
+Connection ~ 6800 3250
+$Comp
+L USER_Power_Symbols:GND #PWR039
+U 1 1 604F8D39
+P 7300 4200
+F 0 "#PWR039" H 7300 3950 50  0001 C CNN
+F 1 "GND" H 7300 4050 50  0000 C CNN
+F 2 "" H 7300 4200 50  0001 C CNN
+F 3 "" H 7300 4200 50  0001 C CNN
+	1    7300 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 4200 7300 4150
+Wire Wire Line
+	7600 3750 7800 3750
+Wire Wire Line
+	7800 3750 7800 3800
+Wire Wire Line
+	7800 4100 7800 4150
+Wire Wire Line
+	7800 4150 7300 4150
+Connection ~ 7300 4150
+Wire Wire Line
+	7300 4150 7300 3950
+Wire Wire Line
+	7800 3750 8300 3750
+Connection ~ 7800 3750
+Text HLabel 8300 3750 2    50   Input ~ 0
+POWER_LATCH
+Wire Wire Line
+	5450 4850 5650 4850
+Wire Wire Line
+	4900 5500 5550 5500
+Wire Wire Line
+	5650 5000 5650 4850
+Connection ~ 5650 4850
+Wire Wire Line
+	5650 4850 5900 4850
+Wire Wire Line
+	5550 5350 5550 5500
+Connection ~ 5550 5500
+Wire Wire Line
+	5550 5500 5650 5500
+Wire Wire Line
+	5650 5350 5650 5500
+Connection ~ 5650 5500
+Wire Wire Line
+	5650 5500 6350 5500
+$Comp
+L USER_Connectors_Generic:Conn_01x02 J7
+U 1 1 607D810C
+P 3750 2200
+F 0 "J7" H 3750 2450 50  0000 C CNN
+F 1 "Conn_01x02" H 3650 2350 50  0001 C CNN
+F 2 "USER_Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 3750 2200 50  0001 C CNN
+F 3 "~" H 3750 2200 50  0001 C CNN
+F 4 "DC IN 12-24V" H 3750 2350 50  0000 C CNN "Label"
+F 5 "0.11" H 3750 2200 50  0001 C CNN "Cost"
+F 6 "Molex KK254, 2 Pos, VTH, Friction Lock " H 3750 2200 50  0001 C CNN "Description"
+F 7 "Molex" H 3750 2200 50  0001 C CNN "Manufacturer"
+F 8 "0022232021" H 3750 2200 50  0001 C CNN "Manufacturer Part Number"
+F 9 "Digikey" H 3750 2200 50  0001 C CNN "Supplier"
+F 10 "900-0022232021-ND" H 3750 2200 50  0001 C CNN "Supplier Part Number"
+	1    3750 2200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L USER_Diodes:D_Zener D5
+U 1 1 607D882C
+P 4600 2400
+F 0 "D5" V 4550 2500 50  0000 L CNN
+F 1 "26V, 9.5A" V 4650 2500 50  0000 L CNN
+F 2 "USER_Diode_SMD:D_SMA" H 4600 2400 50  0001 C CNN
+F 3 "~" H 4600 2400 50  0001 C CNN
+F 4 "0.27" H 4600 2400 50  0001 C CNN "Cost"
+F 5 "26V Reverse Standoff, 9.5A, 42.1V Clamp, Unidirectional TVS Diode, SMA" H 4600 2400 50  0001 C CNN "Description"
+F 6 "Littlefuse" H 4600 2400 50  0001 C CNN "Manufacturer"
+F 7 "SMAJ26A" H 4600 2400 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 4600 2400 50  0001 C CNN "Supplier"
+F 9 "SMAJ26ALFCT-ND" H 4600 2400 50  0001 C CNN "Supplier Part Number"
+F 10 "C134975" H 4600 2400 50  0001 C CNN "LCSC Part Number"
+	1    4600 2400
+	0    -1   1    0   
+$EndComp
+$Comp
+L USER_Passives:Fuse F4
+U 1 1 607D931D
+P 4300 2200
+F 0 "F4" V 4100 2200 50  0000 C CNN
+F 1 "5A" V 4200 2200 50  0000 C CNN
+F 2 "USER_Fuse:Fuseholder_Littelfuse_154" V 4230 2200 50  0001 C CNN
+F 3 "~" H 4300 2200 50  0001 C CNN
+F 4 "1.92" H 4300 2200 50  0001 C CNN "Cost"
+F 5 "Board Mount Fuse and Fuseholder, 5A, 125V, 2 SMD" H 4300 2200 50  0001 C CNN "Description"
+F 6 "Littlefuse" H 4300 2200 50  0001 C CNN "Manufacturer"
+F 7 "0154005.DR" H 4300 2200 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 4300 2200 50  0001 C CNN "Supplier"
+F 9 "F1228CT-ND" H 4300 2200 50  0001 C CNN "Supplier Part Number"
+	1    4300 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L USER_Passives:Capacitor C18
+U 1 1 607DB8C7
+P 4900 2400
+F 0 "C18" H 5050 2450 50  0000 L CNN
+F 1 "10uF" H 5050 2350 50  0000 L CNN
+F 2 "USER_Capacitor_SMD:C_1210_3225Metric" H 4938 2250 50  0001 C CNN
+F 3 "~" H 4900 2400 50  0001 C CNN
+F 4 "0.47" H 4900 2400 50  0001 C CNN "Cost"
+F 5 "10uF, 35V, X7R, 1210" H 4900 2400 50  0001 C CNN "Description"
+F 6 "Samsung" H 4900 2400 50  0001 C CNN "Manufacturer"
+F 7 "CL32B106KBJNNWE" H 4900 2400 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 4900 2400 50  0001 C CNN "Supplier"
+F 9 "1276-3388-1-ND" H 4900 2400 50  0001 C CNN "Supplier Part Number"
+F 10 "C380537" H 4900 2400 50  0001 C CNN "LCSC Part Number"
+	1    4900 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Capacitor C19
+U 1 1 607DBE19
+P 5400 2400
+F 0 "C19" H 5550 2450 50  0000 L CNN
+F 1 "100nF" H 5550 2350 50  0000 L CNN
+F 2 "USER_Capacitor_SMD:C_0603_1608Metric" H 5438 2250 50  0001 C CNN
+F 3 "~" H 5400 2400 50  0001 C CNN
+F 4 "0.07" H 5400 2400 50  0001 C CNN "Cost"
+F 5 "100nF, 50V, X7R, 0603" H 5400 2400 50  0001 C CNN "Description"
+F 6 "Samsung" H 5400 2400 50  0001 C CNN "Manufacturer"
+F 7 "CL10B104KB8NNNL" H 5400 2400 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 5400 2400 50  0001 C CNN "Supplier"
+F 9 "1276-CL10B104KB8NNNLCT-ND" H 5400 2400 50  0001 C CNN "Supplier Part Number"
+F 10 "C14663" H 5400 2400 50  0001 C CNN "LCSC Part Number"
+	1    5400 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_LEDs:LED D8
+U 1 1 607DC8B3
+P 8100 2400
+F 0 "D8" V 8139 2282 50  0000 R CNN
+F 1 "LED" V 8048 2282 50  0001 R CNN
+F 2 "USER_Diode_SMD:D_0603_1608Metric" H 8100 2400 50  0001 C CNN
+F 3 "~" H 8100 2400 50  0001 C CNN
+F 4 "DC Present" V 8048 2282 50  0000 R CNN "Label"
+F 5 "0.10" H 8100 2400 50  0001 C CNN "Cost"
+F 6 "Green LED, 2V, 0603" H 8100 2400 50  0001 C CNN "Description"
+F 7 "Wurth" H 8100 2400 50  0001 C CNN "Manufacturer"
+F 8 "150060VS75000" H 8100 2400 50  0001 C CNN "Manufacturer Part Number"
+F 9 "Digikey" H 8100 2400 50  0001 C CNN "Supplier"
+F 10 "732-4980-1-ND" H 8100 2400 50  0001 C CNN "Supplier Part Number"
+	1    8100 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L USER_Passives:Resistor R28
+U 1 1 607DCE03
+P 8100 2750
+F 0 "R28" H 8170 2796 50  0000 L CNN
+F 1 "15k" H 8170 2705 50  0000 L CNN
+F 2 "USER_Resistor_SMD:R_0603_1608Metric" V 8030 2750 50  0001 C CNN
+F 3 "~" H 8100 2750 50  0001 C CNN
+F 4 "0.07" H 8100 2750 50  0001 C CNN "Cost"
+F 5 "15k, 1%, 0.1W, 0603" H 8100 2750 50  0001 C CNN "Description"
+F 6 "Yageo" H 8100 2750 50  0001 C CNN "Manufacturer"
+F 7 "RC0603FR-0715KL" H 8100 2750 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 8100 2750 50  0001 C CNN "Supplier"
+F 9 "311-15.0KHRCT-ND" H 8100 2750 50  0001 C CNN "Supplier Part Number"
+F 10 "C22809" H 8100 2750 50  0001 C CNN "LCSC Part Number"
+	1    8100 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Capacitor C15
+U 1 1 607E18B1
+P 3050 4800
+F 0 "C15" H 3200 4850 50  0000 L CNN
+F 1 "10uF" H 3200 4750 50  0000 L CNN
+F 2 "USER_Capacitor_SMD:C_1210_3225Metric" H 3088 4650 50  0001 C CNN
+F 3 "~" H 3050 4800 50  0001 C CNN
+F 4 "0.47" H 3050 4800 50  0001 C CNN "Cost"
+F 5 "10uF, 35V, X7R, 1210" H 3050 4800 50  0001 C CNN "Description"
+F 6 "Samsung" H 3050 4800 50  0001 C CNN "Manufacturer"
+F 7 "CL32B106KBJNNWE" H 3050 4800 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 3050 4800 50  0001 C CNN "Supplier"
+F 9 "1276-3388-1-ND" H 3050 4800 50  0001 C CNN "Supplier Part Number"
+F 10 "C380537" H 3050 4800 50  0001 C CNN "LCSC Part Number"
+	1    3050 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Ferrite_Bead FB2
+U 1 1 607E2018
+P 2750 4550
+F 0 "FB2" V 2555 4550 50  0000 C CNN
+F 1 "600R" V 2646 4550 50  0000 C CNN
+F 2 "USER_Inductor_SMD:L_1206_3216Metric" V 2630 4600 50  0001 C CNN
+F 3 "~" H 2700 4600 50  0001 C CNN
+F 4 "0.16" H 2750 4550 50  0001 C CNN "Cost"
+F 5 "Ferrite Bead, 600R@100MHz, 70mR, 2.5A, 1206" H 2750 4550 50  0001 C CNN "Description"
+F 6 "Wurth" H 2750 4550 50  0001 C CNN "Manufacturer"
+F 7 "742792118" H 2750 4550 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 2750 4550 50  0001 C CNN "Supplier"
+F 9 "732-4653-1-ND" H 2750 4550 50  0001 C CNN "Supplier Part Number"
+F 10 "C74090" H 2750 4550 50  0001 C CNN "LCSC Part Number"
+	1    2750 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L USER_Passives:Capacitor C16
+U 1 1 607E30BB
+P 3550 4800
+F 0 "C16" H 3700 4850 50  0000 L CNN
+F 1 "100nF" H 3700 4750 50  0000 L CNN
+F 2 "USER_Capacitor_SMD:C_0603_1608Metric" H 3588 4650 50  0001 C CNN
+F 3 "~" H 3550 4800 50  0001 C CNN
+F 4 "0.07" H 3550 4800 50  0001 C CNN "Cost"
+F 5 "100nF, 50V, X7R, 0603" H 3550 4800 50  0001 C CNN "Description"
+F 6 "Samsung" H 3550 4800 50  0001 C CNN "Manufacturer"
+F 7 "CL10B104KB8NNNL" H 3550 4800 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 3550 4800 50  0001 C CNN "Supplier"
+F 9 "1276-CL10B104KB8NNNLCT-ND" H 3550 4800 50  0001 C CNN "Supplier Part Number"
+F 10 "C14663" H 3550 4800 50  0001 C CNN "LCSC Part Number"
+	1    3550 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Regulators_Switch-Mode:LMR14050 U2
+U 1 1 607E69E3
+P 4800 4850
+F 0 "U2" H 4800 5415 50  0000 C CNN
+F 1 "LMR14050" H 4800 5324 50  0000 C CNN
+F 2 "USER_Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.3mm_ThermalVias" H 4800 5250 50  0001 C CNN
+F 3 "" H 4800 5250 50  0001 C CNN
+F 4 "2.11" H 4800 4850 50  0001 C CNN "Cost"
+F 5 "Buck Regulator, 5A, PowerSOIC-8" H 4800 4850 50  0001 C CNN "Description"
+F 6 "Texas Instruments" H 4800 4850 50  0001 C CNN "Manufacturer"
+F 7 "LMR14050SDDAR" H 4800 4850 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 4800 4850 50  0001 C CNN "Supplier"
+F 9 "296-44322-1-ND" H 4800 4850 50  0001 C CNN "Supplier Part Number"
+F 10 "C155484" H 4800 4850 50  0001 C CNN "LCSC Part Number"
+	1    4800 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Inductor L1
+U 1 1 607ED6B0
+P 6050 4850
+F 0 "L1" V 6240 4850 50  0000 C CNN
+F 1 "4u7H" V 6149 4850 50  0000 C CNN
+F 2 "USER_Inductor_SMD:L_Bourns_SRR1210A" H 6050 4850 50  0001 C CNN
+F 3 "~" H 6050 4850 50  0001 C CNN
+F 4 "4.7uH Shielded Wirewound Inductor, 8.5A Rated, 9.6A Sat, 12mR" H 6050 4850 50  0001 C CNN "Description"
+F 5 "1.07" H 6050 4850 50  0001 C CNN "Cost"
+F 6 "Bourns" H 6050 4850 50  0001 C CNN "Manufacturer"
+F 7 "SRR1210A-4R7Y" H 6050 4850 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 6050 4850 50  0001 C CNN "Supplier"
+F 9 "SRR1210A-4R7YCT-ND" H 6050 4850 50  0001 C CNN "Supplier Part Number"
+	1    6050 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L USER_Passives:Capacitor C22
+U 1 1 607F1FA2
+P 6350 5150
+F 0 "C22" H 6500 5200 50  0000 L CNN
+F 1 "47uF" H 6500 5100 50  0000 L CNN
+F 2 "USER_Capacitor_SMD:C_1206_3216Metric" H 6388 5000 50  0001 C CNN
+F 3 "~" H 6350 5150 50  0001 C CNN
+F 4 "0.36" H 6350 5150 50  0001 C CNN "Cost"
+F 5 "47uF, 10V, X5R, 1206" H 6350 5150 50  0001 C CNN "Description"
+F 6 "Samsung" H 6350 5150 50  0001 C CNN "Manufacturer"
+F 7 "CL31A476MPHNNNE" H 6350 5150 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 6350 5150 50  0001 C CNN "Supplier"
+F 9 "1276-3063-1-ND" H 6350 5150 50  0001 C CNN "Supplier Part Number"
+F 10 "C96123" H 6350 5150 50  0001 C CNN "LCSC Part Number"
+	1    6350 5150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Capacitor C23
+U 1 1 607F7004
+P 6600 5150
+F 0 "C23" H 6750 5200 50  0000 L CNN
+F 1 "47uF" H 6750 5100 50  0000 L CNN
+F 2 "USER_Capacitor_SMD:C_1206_3216Metric" H 6638 5000 50  0001 C CNN
+F 3 "~" H 6600 5150 50  0001 C CNN
+F 4 "0.36" H 6600 5150 50  0001 C CNN "Cost"
+F 5 "47uF, 10V, X5R, 1206" H 6600 5150 50  0001 C CNN "Description"
+F 6 "Samsung" H 6600 5150 50  0001 C CNN "Manufacturer"
+F 7 "CL31A476MPHNNNE" H 6600 5150 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 6600 5150 50  0001 C CNN "Supplier"
+F 9 "1276-3063-1-ND" H 6600 5150 50  0001 C CNN "Supplier Part Number"
+F 10 "C96123" H 6600 5150 50  0001 C CNN "LCSC Part Number"
+	1    6600 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Capacitor C20
+U 1 1 60814827
+P 5450 4700
+F 0 "C20" H 5600 4750 50  0000 L CNN
+F 1 "100nF" H 5600 4650 50  0000 L CNN
+F 2 "USER_Capacitor_SMD:C_0603_1608Metric" H 5488 4550 50  0001 C CNN
+F 3 "~" H 5450 4700 50  0001 C CNN
+F 4 "0.07" H 5450 4700 50  0001 C CNN "Cost"
+F 5 "100nF, 50V, X7R, 0603" H 5450 4700 50  0001 C CNN "Description"
+F 6 "Samsung" H 5450 4700 50  0001 C CNN "Manufacturer"
+F 7 "CL10B104KB8NNNL" H 5450 4700 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 5450 4700 50  0001 C CNN "Supplier"
+F 9 "1276-CL10B104KB8NNNLCT-ND" H 5450 4700 50  0001 C CNN "Supplier Part Number"
+F 10 "C14663" H 5450 4700 50  0001 C CNN "LCSC Part Number"
+	1    5450 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Resistor R30
+U 1 1 608128C7
+P 9050 5400
+F 0 "R30" H 9120 5446 50  0000 L CNN
+F 1 "15k" H 9120 5355 50  0000 L CNN
+F 2 "USER_Resistor_SMD:R_0603_1608Metric" V 8980 5400 50  0001 C CNN
+F 3 "~" H 9050 5400 50  0001 C CNN
+F 4 "0.07" H 9050 5400 50  0001 C CNN "Cost"
+F 5 "15k, 1%, 0.1W, 0603" H 9050 5400 50  0001 C CNN "Description"
+F 6 "Yageo" H 9050 5400 50  0001 C CNN "Manufacturer"
+F 7 "RC0603FR-0715KL" H 9050 5400 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 9050 5400 50  0001 C CNN "Supplier"
+F 9 "311-15.0KHRCT-ND" H 9050 5400 50  0001 C CNN "Supplier Part Number"
+F 10 "C22809" H 9050 5400 50  0001 C CNN "LCSC Part Number"
+	1    9050 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_LEDs:LED D9
+U 1 1 608128C1
+P 9050 5050
+F 0 "D9" V 9089 4932 50  0000 R CNN
+F 1 "LED" V 8998 4932 50  0001 R CNN
+F 2 "USER_Diode_SMD:D_0603_1608Metric" H 9050 5050 50  0001 C CNN
+F 3 "~" H 9050 5050 50  0001 C CNN
+F 4 "5V0 Present" V 8998 4932 50  0000 R CNN "Label"
+F 5 "0.10" H 9050 5050 50  0001 C CNN "Cost"
+F 6 "Green LED, 2V, 0603" H 9050 5050 50  0001 C CNN "Description"
+F 7 "Wurth" H 9050 5050 50  0001 C CNN "Manufacturer"
+F 8 "150060VS75000" H 9050 5050 50  0001 C CNN "Manufacturer Part Number"
+F 9 "Digikey" H 9050 5050 50  0001 C CNN "Supplier"
+F 10 "732-4980-1-ND" H 9050 5050 50  0001 C CNN "Supplier Part Number"
+	1    9050 5050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L USER_Passives:Resistor R29
+U 1 1 607FEE0D
+P 8200 5100
+F 0 "R29" H 8270 5146 50  0000 L CNN
+F 1 "68k" H 8270 5055 50  0000 L CNN
+F 2 "USER_Resistor_SMD:R_0603_1608Metric" V 8130 5100 50  0001 C CNN
+F 3 "~" H 8200 5100 50  0001 C CNN
+F 4 "0.07" H 8200 5100 50  0001 C CNN "Cost"
+F 5 "68k, 1%, 0.1W, 0603" H 8200 5100 50  0001 C CNN "Description"
+F 6 "Yageo" H 8200 5100 50  0001 C CNN "Manufacturer"
+F 7 "RC0603FR-0768KL" H 8200 5100 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 8200 5100 50  0001 C CNN "Supplier"
+F 9 "311-68.0KHRCT-ND" H 8200 5100 50  0001 C CNN "Supplier Part Number"
+F 10 "C23231" H 8200 5100 50  0001 C CNN "LCSC Part Number"
+	1    8200 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Capacitor C26
+U 1 1 607F7F5A
+P 7600 5150
+F 0 "C26" H 7750 5200 50  0000 L CNN
+F 1 "100nF" H 7750 5100 50  0000 L CNN
+F 2 "USER_Capacitor_SMD:C_0603_1608Metric" H 7638 5000 50  0001 C CNN
+F 3 "~" H 7600 5150 50  0001 C CNN
+F 4 "0.07" H 7600 5150 50  0001 C CNN "Cost"
+F 5 "100nF, 50V, X7R, 0603" H 7600 5150 50  0001 C CNN "Description"
+F 6 "Samsung" H 7600 5150 50  0001 C CNN "Manufacturer"
+F 7 "CL10B104KB8NNNL" H 7600 5150 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 7600 5150 50  0001 C CNN "Supplier"
+F 9 "1276-CL10B104KB8NNNLCT-ND" H 7600 5150 50  0001 C CNN "Supplier Part Number"
+F 10 "C14663" H 7600 5150 50  0001 C CNN "LCSC Part Number"
+	1    7600 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Resistor R27
+U 1 1 607E9143
+P 8000 5500
+F 0 "R27" V 7900 5500 50  0000 C CNN
+F 1 "12k" V 8100 5500 50  0000 C CNN
+F 2 "USER_Resistor_SMD:R_0603_1608Metric" V 7930 5500 50  0001 C CNN
+F 3 "~" H 8000 5500 50  0001 C CNN
+F 4 "0.07" H 8000 5500 50  0001 C CNN "Cost"
+F 5 "12k, 1%, 0.1W, 0603" H 8000 5500 50  0001 C CNN "Description"
+F 6 "Yageo" H 8000 5500 50  0001 C CNN "Manufacturer"
+F 7 "RC0603FR-0712KL" H 8000 5500 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 8000 5500 50  0001 C CNN "Supplier"
+F 9 "311-12.0KHRCT-ND" H 8000 5500 50  0001 C CNN "Supplier Part Number"
+F 10 "C22790" H 8000 5500 50  0001 C CNN "LCSC Part Number"
+	1    8000 5500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L USER_Passives:Capacitor C17
+U 1 1 608346D7
+P 4100 5500
+F 0 "C17" H 4250 5550 50  0000 L CNN
+F 1 "10nF" H 4250 5450 50  0000 L CNN
+F 2 "USER_Capacitor_SMD:C_0603_1608Metric" H 4138 5350 50  0001 C CNN
+F 3 "~" H 4100 5500 50  0001 C CNN
+F 4 "0.07" H 4100 5500 50  0001 C CNN "Cost"
+F 5 "10nF, 50V, X7R, 0603" H 4100 5500 50  0001 C CNN "Description"
+F 6 "Samsung" H 4100 5500 50  0001 C CNN "Manufacturer"
+F 7 "CL10B103KB8NNNC" H 4100 5500 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 4100 5500 50  0001 C CNN "Supplier"
+F 9 "1276-1009-1-ND" H 4100 5500 50  0001 C CNN "Supplier Part Number"
+F 10 "C1589" H 4100 5500 50  0001 C CNN "LCSC Part Number"
+	1    4100 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Resistor R22
+U 1 1 608387C1
+P 3850 5500
+F 0 "R22" H 3780 5454 50  0000 R CNN
+F 1 "12k" H 3780 5545 50  0000 R CNN
+F 2 "USER_Resistor_SMD:R_0603_1608Metric" V 3780 5500 50  0001 C CNN
+F 3 "~" H 3850 5500 50  0001 C CNN
+F 4 "0.07" H 3850 5500 50  0001 C CNN "Cost"
+F 5 "12k, 1%, 0.1W, 0603" H 3850 5500 50  0001 C CNN "Description"
+F 6 "Yageo" H 3850 5500 50  0001 C CNN "Manufacturer"
+F 7 "RC0603FR-0712KL" H 3850 5500 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 3850 5500 50  0001 C CNN "Supplier"
+F 9 "311-12.0KHRCT-ND" H 3850 5500 50  0001 C CNN "Supplier Part Number"
+F 10 "C22790" H 3850 5500 50  0001 C CNN "LCSC Part Number"
+	1    3850 5500
+	1    0    0    1   
+$EndComp
+$Comp
+L USER_Passives:Capacitor C24
+U 1 1 60843AD0
+P 7100 5150
+F 0 "C24" H 7250 5200 50  0000 L CNN
+F 1 "47uF" H 7250 5100 50  0000 L CNN
+F 2 "USER_Capacitor_SMD:C_1206_3216Metric" H 7138 5000 50  0001 C CNN
+F 3 "~" H 7100 5150 50  0001 C CNN
+F 4 "0.36" H 7100 5150 50  0001 C CNN "Cost"
+F 5 "47uF, 10V, X5R, 1206" H 7100 5150 50  0001 C CNN "Description"
+F 6 "Samsung" H 7100 5150 50  0001 C CNN "Manufacturer"
+F 7 "CL31A476MPHNNNE" H 7100 5150 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 7100 5150 50  0001 C CNN "Supplier"
+F 9 "1276-3063-1-ND" H 7100 5150 50  0001 C CNN "Supplier Part Number"
+F 10 "C96123" H 7100 5150 50  0001 C CNN "LCSC Part Number"
+	1    7100 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Capacitor C27
+U 1 1 6083F04A
+P 8600 5100
+F 0 "C27" H 8750 5150 50  0000 L CNN
+F 1 "270pF" H 8750 5050 50  0000 L CNN
+F 2 "USER_Capacitor_SMD:C_0603_1608Metric" H 8638 4950 50  0001 C CNN
+F 3 "~" H 8600 5100 50  0001 C CNN
+F 4 "0.11" H 8600 5100 50  0001 C CNN "Cost"
+F 5 "270pF, 50V, C0G-NP0, 0603" H 8600 5100 50  0001 C CNN "Description"
+F 6 "Samsung" H 8600 5100 50  0001 C CNN "Manufacturer"
+F 7 "CL10C271JB81PNC" H 8600 5100 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 8600 5100 50  0001 C CNN "Supplier"
+F 9 "1276-7006-1-ND" H 8600 5100 50  0001 C CNN "Supplier Part Number"
+F 10 "C1657" H 8600 5100 50  0001 C CNN "LCSC Part Number"
+	1    8600 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_FETs:Q_PMOS_GDSD Q4
+U 1 1 604820A8
+P 7150 2300
+F 0 "Q4" V 7575 2300 50  0000 C CNN
+F 1 "DMP6023LE" V 7484 2300 50  0000 C CNN
+F 2 "USER_Package_TO_SOT_SMD:SOT-223" H 7350 2400 50  0001 C CNN
+F 3 "~" H 7150 2300 50  0001 C CNN
+F 4 "0.58" H 7150 2300 50  0001 C CNN "Cost"
+F 5 "DMP6023LE-13" H 7150 2300 50  0001 C CNN "Manufacturer Part Number"
+F 6 "P-Channel MOSFET, 60V, 7A, SOT-223" H 7150 2300 50  0001 C CNN "Description"
+F 7 "Diodes Incorporated" H 7150 2300 50  0001 C CNN "Manufacturer"
+F 8 "Digikey" H 7150 2300 50  0001 C CNN "Supplier"
+F 9 "DMP6023LE-13DICT-ND" H 7150 2300 50  0001 C CNN "Supplier Part Number"
+F 10 "C154901" H 7150 2300 50  0001 C CNN "LCSC Part Number"
+	1    7150 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L USER_FETs:Q_PMOS_GDSD Q3
+U 1 1 60483238
+P 6450 2300
+F 0 "Q3" V 6875 2300 50  0000 C CNN
+F 1 "DMP6023LE" V 6784 2300 50  0000 C CNN
+F 2 "USER_Package_TO_SOT_SMD:SOT-223" H 6650 2400 50  0001 C CNN
+F 3 "~" H 6450 2300 50  0001 C CNN
+F 4 "0.58" H 6450 2300 50  0001 C CNN "Cost"
+F 5 "DMP6023LE-13" H 6450 2300 50  0001 C CNN "Manufacturer Part Number"
+F 6 "P-Channel MOSFET, 60V, 7A, SOT-223" H 6450 2300 50  0001 C CNN "Description"
+F 7 "Diodes Incorporated" H 6450 2300 50  0001 C CNN "Manufacturer"
+F 8 "Digikey" H 6450 2300 50  0001 C CNN "Supplier"
+F 9 "DMP6023LE-13DICT-ND" H 6450 2300 50  0001 C CNN "Supplier Part Number"
+F 10 "C154901" H 6450 2300 50  0001 C CNN "LCSC Part Number"
+	1    6450 2300
+	0    1    -1   0   
+$EndComp
+$Comp
+L USER_Passives:Resistor R24
+U 1 1 6048DA4B
+P 6000 2400
+F 0 "R24" H 6070 2446 50  0000 L CNN
+F 1 "12k" H 6070 2355 50  0000 L CNN
+F 2 "USER_Resistor_SMD:R_0603_1608Metric" V 5930 2400 50  0001 C CNN
+F 3 "~" H 6000 2400 50  0001 C CNN
+F 4 "0.07" H 6000 2400 50  0001 C CNN "Cost"
+F 5 "12k, 1%, 0.1W, 0603" H 6000 2400 50  0001 C CNN "Description"
+F 6 "Yageo" H 6000 2400 50  0001 C CNN "Manufacturer"
+F 7 "RC0603FR-0712KL" H 6000 2400 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 6000 2400 50  0001 C CNN "Supplier"
+F 9 "311-12.0KHRCT-ND" H 6000 2400 50  0001 C CNN "Supplier Part Number"
+F 10 "C22790" H 6000 2400 50  0001 C CNN "LCSC Part Number"
+	1    6000 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Resistor R25
+U 1 1 6049B26B
+P 6800 2800
+F 0 "R25" H 6870 2846 50  0000 L CNN
+F 1 "3k3" H 6870 2755 50  0000 L CNN
+F 2 "USER_Resistor_SMD:R_0603_1608Metric" V 6730 2800 50  0001 C CNN
+F 3 "~" H 6800 2800 50  0001 C CNN
+F 4 "0.07" H 6800 2800 50  0001 C CNN "Cost"
+F 5 "3.3k, 1%, 0.1W, 0603" H 6800 2800 50  0001 C CNN "Description"
+F 6 "Yageo" H 6800 2800 50  0001 C CNN "Manufacturer"
+F 7 "RC0603FR-073K3L" H 6800 2800 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 6800 2800 50  0001 C CNN "Supplier"
+F 9 "311-3.30KHRCT-ND" H 6800 2800 50  0001 C CNN "Supplier Part Number"
+F 10 "C22978" H 6800 2800 50  0001 C CNN "LCSC Part Number"
+	1    6800 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Switches:SW_Push SW1
+U 1 1 604AD107
+P 5300 3800
+F 0 "SW1" V 5346 3948 50  0000 L CNN
+F 1 "SW_Push" V 5255 3948 50  0000 L CNN
+F 2 "USER_Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP" H 5300 4000 50  0001 C CNN
+F 3 "~" H 5300 4000 50  0001 C CNN
+F 4 "Tactile Switch, SPST-NO, Momentary, 50mA, 24V" H 5300 3800 50  0001 C CNN "Description"
+F 5 "Omron" H 5300 3800 50  0001 C CNN "Manufacturer"
+F 6 "B3FS-1000P" H 5300 3800 50  0001 C CNN "Manufacturer Part Number"
+F 7 "Digikey" H 5300 3800 50  0001 C CNN "Supplier"
+F 8 "SW423CT-ND" H 5300 3800 50  0001 C CNN "Supplier Part Number"
+F 9 "0.42" H 5300 3800 50  0001 C CNN "Cost"
+	1    5300 3800
+	0    1    -1   0   
+$EndComp
+$Comp
+L USER_Connectors_Generic:Conn_01x02 J8
+U 1 1 604AE0A2
+P 4800 3750
+F 0 "J8" H 4800 4000 50  0000 C CNN
+F 1 "Conn_01x02" H 4700 3900 50  0001 C CNN
+F 2 "USER_Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 4800 3750 50  0001 C CNN
+F 3 "~" H 4800 3750 50  0001 C CNN
+F 4 "Power Switch" H 4800 3900 50  0000 C CNN "Label"
+F 5 "0.11" H 4800 3750 50  0001 C CNN "Cost"
+F 6 "Molex KK254, 2 Pos, VTH, Friction Lock " H 4800 3750 50  0001 C CNN "Description"
+F 7 "Molex" H 4800 3750 50  0001 C CNN "Manufacturer"
+F 8 "0022232021" H 4800 3750 50  0001 C CNN "Manufacturer Part Number"
+F 9 "Digikey" H 4800 3750 50  0001 C CNN "Supplier"
+F 10 "900-0022232021-ND" H 4800 3750 50  0001 C CNN "Supplier Part Number"
+	1    4800 3750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Capacitor C21
+U 1 1 604AE8CE
+P 6150 3800
+F 0 "C21" H 6300 3850 50  0000 L CNN
+F 1 "10nF" H 6300 3750 50  0000 L CNN
+F 2 "USER_Capacitor_SMD:C_0603_1608Metric" H 6188 3650 50  0001 C CNN
+F 3 "~" H 6150 3800 50  0001 C CNN
+F 4 "0.07" H 6150 3800 50  0001 C CNN "Cost"
+F 5 "10nF, 50V, X7R, 0603" H 6150 3800 50  0001 C CNN "Description"
+F 6 "Samsung" H 6150 3800 50  0001 C CNN "Manufacturer"
+F 7 "CL10B103KB8NNNC" H 6150 3800 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 6150 3800 50  0001 C CNN "Supplier"
+F 9 "1276-1009-1-ND" H 6150 3800 50  0001 C CNN "Supplier Part Number"
+F 10 "C1589" H 6150 3800 50  0001 C CNN "LCSC Part Number"
+	1    6150 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Diodes:D_Schottky_x2_KCom_AAK D7
+U 1 1 604C9CFF
+P 6150 3250
+F 0 "D7" H 6150 3467 50  0000 C CNN
+F 1 "BAT54C" H 6150 3376 50  0000 C CNN
+F 2 "USER_Package_TO_SOT_SMD:SOT-23" H 6150 3250 50  0001 C CNN
+F 3 "~" H 6150 3250 50  0001 C CNN
+F 4 "0.09" H 6150 3250 50  0001 C CNN "Cost"
+F 5 "Common Cathode Dual Shottky Diode, 30V, SOT23" H 6150 3250 50  0001 C CNN "Description"
+F 6 "Nexperia" H 6150 3250 50  0001 C CNN "Manufacturer"
+F 7 "BAT54C,215" H 6150 3250 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 6150 3250 50  0001 C CNN "Supplier"
+F 9 "1727-2902-1-ND" H 6150 3250 50  0001 C CNN "Supplier Part Number"
+F 10 "C37704" H 6150 3250 50  0001 C CNN "LCSC Part Number"
+	1    6150 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Resistor R23
+U 1 1 604DCDB6
+P 5750 3000
+F 0 "R23" H 5820 3046 50  0000 L CNN
+F 1 "15k" H 5820 2955 50  0000 L CNN
+F 2 "USER_Resistor_SMD:R_0603_1608Metric" V 5680 3000 50  0001 C CNN
+F 3 "~" H 5750 3000 50  0001 C CNN
+F 4 "0.07" H 5750 3000 50  0001 C CNN "Cost"
+F 5 "15k, 1%, 0.1W, 0603" H 5750 3000 50  0001 C CNN "Description"
+F 6 "Yageo" H 5750 3000 50  0001 C CNN "Manufacturer"
+F 7 "RC0603FR-0715KL" H 5750 3000 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 5750 3000 50  0001 C CNN "Supplier"
+F 9 "311-15.0KHRCT-ND" H 5750 3000 50  0001 C CNN "Supplier Part Number"
+F 10 "C22809" H 5750 3000 50  0001 C CNN "LCSC Part Number"
+	1    5750 3000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L USER_FETs:Q_NMOS_GSD Q5
+U 1 1 604F3F00
+P 7400 3750
+F 0 "Q5" H 7605 3796 50  0000 L CNN
+F 1 "2N7002" H 7605 3705 50  0000 L CNN
+F 2 "USER_Package_TO_SOT_SMD:SOT-23" H 7600 3850 50  0001 C CNN
+F 3 "~" H 7400 3750 50  0001 C CNN
+F 4 "0.11" H 7400 3750 50  0001 C CNN "Cost"
+F 5 "N-Channel MOSFET, 30V, 360mA, SOT23" H 7400 3750 50  0001 C CNN "Description"
+F 6 "Nexperia" H 7400 3750 50  0001 C CNN "Manufacturer"
+F 7 "2N7002P,235" H 7400 3750 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 7400 3750 50  0001 C CNN "Supplier"
+F 9 "1727-1865-1-ND" H 7400 3750 50  0001 C CNN "Supplier Part Number"
+F 10 "C65189" H 7400 3750 50  0001 C CNN "LCSC Part Number"
+	1    7400 3750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Resistor R26
+U 1 1 604FD898
+P 7800 3950
+F 0 "R26" H 7870 3996 50  0000 L CNN
+F 1 "15k" H 7870 3905 50  0000 L CNN
+F 2 "USER_Resistor_SMD:R_0603_1608Metric" V 7730 3950 50  0001 C CNN
+F 3 "~" H 7800 3950 50  0001 C CNN
+F 4 "0.07" H 7800 3950 50  0001 C CNN "Cost"
+F 5 "15k, 1%, 0.1W, 0603" H 7800 3950 50  0001 C CNN "Description"
+F 6 "Yageo" H 7800 3950 50  0001 C CNN "Manufacturer"
+F 7 "RC0603FR-0715KL" H 7800 3950 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 7800 3950 50  0001 C CNN "Supplier"
+F 9 "311-15.0KHRCT-ND" H 7800 3950 50  0001 C CNN "Supplier Part Number"
+F 10 "C22809" H 7800 3950 50  0001 C CNN "LCSC Part Number"
+	1    7800 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L USER_Diodes:D_AAK D10
+U 1 1 60578B6B
+P 5650 5150
+F 0 "D10" V 5550 5350 50  0000 R CNN
+F 1 "MBR1560STR" H 5900 5000 50  0000 R CNN
+F 2 "USER_Package_TO_SOT_SMD:TO-277B" H 5650 5150 50  0001 C CNN
+F 3 "~" H 5650 5150 50  0001 C CNN
+F 4 "0.43" H 5650 5150 50  0001 C CNN "Cost"
+F 5 "Schottky Diode, 60V, 15A, TO-277B" H 5650 5150 50  0001 C CNN "Description"
+F 6 "SMC" H 5650 5150 50  0001 C CNN "Manufacturer"
+F 7 "MBR1560STR" H 5650 5150 50  0001 C CNN "Manufacturer Part Number"
+F 8 "Digikey" H 5650 5150 50  0001 C CNN "Supplier"
+F 9 "1655-2290-1-ND" H 5650 5150 50  0001 C CNN "Supplier Part Number"
+F 10 "C305422" H 5650 5150 50  0001 C CNN "LCSC Part Number"
+	1    5650 5150
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6800 2100 6800 2200
+Connection ~ 6800 2100
+Wire Wire Line
+	6800 2100 6650 2100
+Connection ~ 6800 2200
+Wire Wire Line
+	6800 2200 6950 2200
+Wire Wire Line
+	7350 2200 8100 2200
+$EndSCHEMATC

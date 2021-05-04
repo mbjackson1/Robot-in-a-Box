@@ -1,0 +1,357 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "IR Distance Horizontal"
+Date "2021-04-10"
+Rev "vA"
+Comp ""
+Comment1 "Matthew Jackson"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L USER_FETs:Q_NMOS_GSD Q1
+U 1 1 60577421
+P 4450 3450
+F 0 "Q1" H 4655 3496 50  0000 L CNN
+F 1 "FDV303N" H 4655 3405 50  0000 L CNN
+F 2 "USER_Package_TO_SOT_SMD:SOT-23" H 4650 3550 50  0001 C CNN
+F 3 "~" H 4450 3450 50  0001 C CNN
+F 4 "0.29" H 4450 3450 50  0001 C CNN "Cost"
+F 5 "ON Semiconductor" H 4450 3450 50  0001 C CNN "Manufacturer"
+F 6 "FDV303N" H 4450 3450 50  0001 C CNN "Manufacturer Part Number"
+F 7 "N-Channel MOSFET, 25V, 680mA, SOT23-3" H 4450 3450 50  0001 C CNN "Part Description"
+F 8 "Digikey" H 4450 3450 50  0001 C CNN "Supplier"
+F 9 "FDV303NCT-ND" H 4450 3450 50  0001 C CNN "Supplier Part Number"
+	1    4450 3450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L USER_Sensors:Optical_Reflectance_Sensor_TCRT10x0 U1
+U 1 1 6058020F
+P 4450 2750
+F 0 "U1" H 4850 3050 50  0000 L CNN
+F 1 "TCRT1000" H 4850 2950 50  0000 L CNN
+F 2 "USER_OptoDevice:Vishay_TCRT10x0_Reflective_Sensor" H 4450 2750 50  0001 C CNN
+F 3 "" H 4450 2750 50  0001 C CNN
+F 4 "0.92" H 4450 2750 50  0001 C CNN "Cost"
+F 5 "Vishay" H 4450 2750 50  0001 C CNN "Manufacturer"
+F 6 "TCRT1000" H 4450 2750 50  0001 C CNN "Manufacturer Part Number"
+F 7 "Reflective Optical Sensor" H 4450 2750 50  0001 C CNN "Part Description"
+F 8 "Digikey" H 4450 2750 50  0001 C CNN "Supplier"
+F 9 "751-1031-ND" H 4450 2750 50  0001 C CNN "Supplier Part Number"
+	1    4450 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Passives:Resistor R1
+U 1 1 60582841
+P 4350 3000
+F 0 "R1" H 4281 2954 50  0000 R CNN
+F 1 "22R" H 4281 3045 50  0000 R CNN
+F 2 "USER_Resistor_SMD:R_0603_1608Metric" V 4280 3000 50  0001 C CNN
+F 3 "~" H 4350 3000 50  0001 C CNN
+F 4 "0.07" H 4350 3000 50  0001 C CNN "Cost"
+F 5 "Yageo" H 4350 3000 50  0001 C CNN "Manufacturer"
+F 6 "RC0603FR-0722RL" H 4350 3000 50  0001 C CNN "Manufacturer Part Number"
+F 7 "22R, 1%, 0.1W, 0603" H 4350 3000 50  0001 C CNN "Part Description"
+F 8 "Digikey" H 4350 3000 50  0001 C CNN "Supplier"
+F 9 "311-22.0HRCT-ND" H 4350 3000 50  0001 C CNN "Supplier Part Number"
+	1    4350 3000
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4350 3250 4350 3150
+Wire Wire Line
+	4350 2850 4350 2750
+Wire Wire Line
+	4150 2750 4150 2850
+Wire Wire Line
+	4150 2850 3900 2850
+Wire Wire Line
+	3900 2850 3900 2750
+$Comp
+L USER_Power_Symbols:+3V3 #PWR01
+U 1 1 60593F78
+P 3900 2750
+F 0 "#PWR01" H 3900 2600 50  0001 C CNN
+F 1 "+3V3" H 3915 2923 50  0000 C CNN
+F 2 "" H 3900 2750 50  0001 C CNN
+F 3 "" H 3900 2750 50  0001 C CNN
+	1    3900 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Power_Symbols:GND #PWR03
+U 1 1 605948D3
+P 4550 2850
+F 0 "#PWR03" H 4550 2600 50  0001 C CNN
+F 1 "GND" H 4555 2677 50  0000 C CNN
+F 2 "" H 4550 2850 50  0001 C CNN
+F 3 "" H 4550 2850 50  0001 C CNN
+	1    4550 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 2850 4550 2750
+$Comp
+L USER_Power_Symbols:GND #PWR02
+U 1 1 6059A804
+P 4350 3750
+F 0 "#PWR02" H 4350 3500 50  0001 C CNN
+F 1 "GND" H 4355 3577 50  0000 C CNN
+F 2 "" H 4350 3750 50  0001 C CNN
+F 3 "" H 4350 3750 50  0001 C CNN
+	1    4350 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3750 4350 3650
+$Comp
+L USER_Passives:Resistor R2
+U 1 1 605A0828
+P 4750 3000
+F 0 "R2" H 4680 2954 50  0000 R CNN
+F 1 "10k" H 4680 3045 50  0000 R CNN
+F 2 "USER_Resistor_SMD:R_0603_1608Metric" V 4680 3000 50  0001 C CNN
+F 3 "~" H 4750 3000 50  0001 C CNN
+F 4 "0.07" H 4750 3000 50  0001 C CNN "Cost"
+F 5 "Yageo" H 4750 3000 50  0001 C CNN "Manufacturer"
+F 6 "RC0603FR-0710KL" H 4750 3000 50  0001 C CNN "Manufacturer Part Number"
+F 7 "10k, 1%, 0.1W, 0603" H 4750 3000 50  0001 C CNN "Part Description"
+F 8 "Digikey" H 4750 3000 50  0001 C CNN "Supplier"
+F 9 "311-10.0KHRCT-ND" H 4750 3000 50  0001 C CNN "Supplier Part Number"
+	1    4750 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L USER_Power_Symbols:+3V3 #PWR05
+U 1 1 605A0E22
+P 5150 3150
+F 0 "#PWR05" H 5150 3000 50  0001 C CNN
+F 1 "+3V3" H 5165 3323 50  0000 C CNN
+F 2 "" H 5150 3150 50  0001 C CNN
+F 3 "" H 5150 3150 50  0001 C CNN
+	1    5150 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3150 5150 3250
+Wire Wire Line
+	5150 3250 4750 3250
+Wire Wire Line
+	4750 3250 4750 3150
+Wire Wire Line
+	4750 2850 4750 2800
+Wire Wire Line
+	4750 2800 5600 2800
+Connection ~ 4750 2800
+Wire Wire Line
+	4750 2800 4750 2750
+Wire Wire Line
+	4650 3450 4750 3450
+$Comp
+L USER_Passives:Resistor R3
+U 1 1 605B9F64
+P 4750 3700
+F 0 "R3" H 4680 3654 50  0000 R CNN
+F 1 "10k" H 4680 3745 50  0000 R CNN
+F 2 "USER_Resistor_SMD:R_0603_1608Metric" V 4680 3700 50  0001 C CNN
+F 3 "~" H 4750 3700 50  0001 C CNN
+F 4 "0.07" H 4750 3700 50  0001 C CNN "Cost"
+F 5 "Yageo" H 4750 3700 50  0001 C CNN "Manufacturer"
+F 6 "RC0603FR-0710KL" H 4750 3700 50  0001 C CNN "Manufacturer Part Number"
+F 7 "10k, 1%, 0.1W, 0603" H 4750 3700 50  0001 C CNN "Part Description"
+F 8 "Digikey" H 4750 3700 50  0001 C CNN "Supplier"
+F 9 "311-10.0KHRCT-ND" H 4750 3700 50  0001 C CNN "Supplier Part Number"
+	1    4750 3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4750 3550 4750 3450
+Connection ~ 4750 3450
+Wire Wire Line
+	4750 3450 5600 3450
+$Comp
+L USER_Power_Symbols:GND #PWR04
+U 1 1 605C096F
+P 4750 3950
+F 0 "#PWR04" H 4750 3700 50  0001 C CNN
+F 1 "GND" H 4755 3777 50  0000 C CNN
+F 2 "" H 4750 3950 50  0001 C CNN
+F 3 "" H 4750 3950 50  0001 C CNN
+	1    4750 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3950 4750 3850
+$Comp
+L USER_Passives:Capacitor C?
+U 1 1 607617EC
+P 6450 3050
+AR Path="/60547EF1/607617EC" Ref="C?"  Part="1" 
+AR Path="/607617EC" Ref="C1"  Part="1" 
+F 0 "C1" H 6335 3004 50  0000 R CNN
+F 1 "100nF" H 6335 3095 50  0000 R CNN
+F 2 "USER_Capacitor_SMD:C_0603_1608Metric" H 6488 2900 50  0001 C CNN
+F 3 "~" H 6450 3050 50  0001 C CNN
+F 4 "0.07" H 6450 3050 50  0001 C CNN "Cost"
+F 5 "Samsung" H 6450 3050 50  0001 C CNN "Manufacturer"
+F 6 "CL10B104KB8NNNL" H 6450 3050 50  0001 C CNN "Manufacturer Part Number"
+F 7 "100nF, 50V, X7R, 0603" H 6450 3050 50  0001 C CNN "Part Description"
+F 8 "Digikey" H 6450 3050 50  0001 C CNN "Supplier"
+F 9 "1276-CL10B104KB8NNNLCT-ND" H 6450 3050 50  0001 C CNN "Supplier Part Number"
+	1    6450 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L USER_Power_Symbols:+3V3 #PWR?
+U 1 1 6076D505
+P 6450 2800
+AR Path="/6037B2CC/6076D505" Ref="#PWR?"  Part="1" 
+AR Path="/6076D505" Ref="#PWR09"  Part="1" 
+AR Path="/60547EF1/6076D505" Ref="#PWR?"  Part="1" 
+F 0 "#PWR09" H 6450 2650 50  0001 C CNN
+F 1 "+3V3" H 6465 2973 50  0000 C CNN
+F 2 "" H 6450 2800 50  0001 C CNN
+F 3 "" H 6450 2800 50  0001 C CNN
+	1    6450 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Power_Symbols:GND #PWR010
+U 1 1 6079EA77
+P 6450 3350
+F 0 "#PWR010" H 6450 3100 50  0001 C CNN
+F 1 "GND" H 6455 3177 50  0000 C CNN
+F 2 "" H 6450 3350 50  0001 C CNN
+F 3 "" H 6450 3350 50  0001 C CNN
+	1    6450 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Misc:PCB_Text T1
+U 1 1 606D74F9
+P 8750 6650
+F 0 "T1" H 8750 6915 50  0000 C CNN
+F 1 "IR Distance" H 8750 6824 50  0000 C CNN
+F 2 "USER_PCB_Texts:PCB_Title_&_Version" H 8750 6650 50  0001 C CNN
+F 3 "" H 8750 6650 50  0001 C CNN
+	1    8750 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L USER_Misc:PCB_Text T2
+U 1 1 606D76A9
+P 9600 6650
+F 0 "T2" H 9600 6915 50  0000 C CNN
+F 1 "Board ID" H 9600 6824 50  0000 C CNN
+F 2 "USER_PCB_Texts:Board_Number" H 9600 6650 50  0001 C CNN
+F 3 "" H 9600 6650 50  0001 C CNN
+	1    9600 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 2800 6450 2900
+Wire Wire Line
+	6450 3200 6450 3350
+$Comp
+L USER_Connectors_Generic:Conn_01x10 J1
+U 1 1 606E67B1
+P 5900 5200
+F 0 "J1" H 5980 5192 50  0000 L CNN
+F 1 "SlimStack Female 10Pos Vertical" H 5980 5101 50  0000 L CNN
+F 2 "USER_Connector_Molex:Molex_SlimStack_533071071_2x05_P0.8mm_Vertical_Female" H 5900 5200 50  0001 C CNN
+F 3 "~" H 5900 5200 50  0001 C CNN
+F 4 "1" H 5900 5200 50  0001 C CNN "Cost"
+F 5 "Molex" H 5900 5200 50  0001 C CNN "Manufacturer"
+F 6 "0533071071" H 5900 5200 50  0001 C CNN "Manufacturer Part Number"
+F 7 "Molex SlimStack, 0.8mm Pitch, 10 Position, Female Header, Vertical" H 5900 5200 50  0001 C CNN "Part Description"
+F 8 "Digikey" H 5900 5200 50  0001 C CNN "Supplier"
+F 9 "WM8918CT-ND" H 5900 5200 50  0001 C CNN "Supplier Part Number"
+	1    5900 5200
+	1    0    0    1   
+$EndComp
+$Comp
+L USER_Power_Symbols:+12V0 #PWR07
+U 1 1 606E8DBA
+P 5500 4650
+F 0 "#PWR07" H 5500 4500 50  0001 C CNN
+F 1 "+12V0" H 5515 4823 50  0000 C CNN
+F 2 "" H 5500 4650 50  0001 C CNN
+F 3 "" H 5500 4650 50  0001 C CNN
+	1    5500 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4650 5500 4700
+Wire Wire Line
+	5500 4700 5700 4700
+$Comp
+L USER_Power_Symbols:+3V3 #PWR06
+U 1 1 606E97F1
+P 5150 4650
+F 0 "#PWR06" H 5150 4500 50  0001 C CNN
+F 1 "+3V3" H 5165 4823 50  0000 C CNN
+F 2 "" H 5150 4650 50  0001 C CNN
+F 3 "" H 5150 4650 50  0001 C CNN
+	1    5150 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 4650 5150 5400
+Wire Wire Line
+	5150 5400 5700 5400
+Wire Wire Line
+	5700 4800 5600 4800
+Wire Wire Line
+	5600 4800 5600 5200
+Wire Wire Line
+	5700 5200 5600 5200
+Connection ~ 5600 5200
+Wire Wire Line
+	5600 5200 5600 5750
+$Comp
+L USER_Power_Symbols:GND #PWR08
+U 1 1 606EADFD
+P 5600 5750
+F 0 "#PWR08" H 5600 5500 50  0001 C CNN
+F 1 "GND" H 5605 5577 50  0000 C CNN
+F 2 "" H 5600 5750 50  0001 C CNN
+F 3 "" H 5600 5750 50  0001 C CNN
+	1    5600 5750
+	1    0    0    -1  
+$EndComp
+Text Label 4750 4900 0    50   ~ 0
+MOSI
+Text Label 4750 5000 0    50   ~ 0
+MISO
+Text Label 4750 5100 0    50   ~ 0
+SCK
+Text Label 4750 5300 0    50   ~ 0
+GPIO(CS)
+Text Label 4750 5500 0    50   ~ 0
+TIMER
+Text Label 4750 5600 0    50   ~ 0
+ANALOG
+Wire Wire Line
+	4750 4900 5700 4900
+Wire Wire Line
+	5700 5000 4750 5000
+Wire Wire Line
+	4750 5100 5700 5100
+Wire Wire Line
+	5700 5300 4750 5300
+Wire Wire Line
+	4750 5500 5700 5500
+Wire Wire Line
+	5700 5600 4750 5600
+Text Label 5600 3450 2    50   ~ 0
+TIMER
+Text Label 5600 2800 2    50   ~ 0
+ANALOG
+$EndSCHEMATC
