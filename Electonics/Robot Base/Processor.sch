@@ -1563,12 +1563,12 @@ F 1 "Conn_01x05_Shielded" H 6822 4824 50  0001 C CNN
 F 2 "USER_Connector_USB:USB_Mini-B_Wuerth_65100516121_Horizontal" H 6900 4500 50  0001 C CNN
 F 3 "~" H 6900 4500 50  0001 C CNN
 F 4 "USB B Mini" H 7200 4500 50  0000 C CNN "Label"
-F 5 "1.47" H 6900 4500 50  0001 C CNN "Cost"
-F 6 "USB Micro B Socket, RATH" H 6900 4500 50  0001 C CNN "Description"
+F 5 "0.95" H 6900 4500 50  0001 C CNN "Cost"
+F 6 "USB Micro B Socket, RA SM" H 6900 4500 50  0001 C CNN "Description"
 F 7 "Wurth" H 6900 4500 50  0001 C CNN "Manufacturer"
-F 8 "629105150521" H 6900 4500 50  0001 C CNN "Manufacturer Part Number"
+F 8 "65100516121" H 6900 4500 50  0001 C CNN "Manufacturer Part Number"
 F 9 "Digikey" H 6900 4500 50  0001 C CNN "Supplier"
-F 10 "732-5960-1-ND" H 6900 4500 50  0001 C CNN "Supplier Part Number"
+F 10 "732-2109-1-ND" H 6900 4500 50  0001 C CNN "Supplier Part Number"
 	1    6900 4500
 	-1   0    0    -1  
 $EndComp
